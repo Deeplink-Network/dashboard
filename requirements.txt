@@ -1,0 +1,8 @@
+aiohttp
+Flask[async]
+Flask-Cors
+gunicorn
+gevent
+pandas
+numpy
+rich
