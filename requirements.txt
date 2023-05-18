@@ -6,3 +6,4 @@ gevent
 pandas
 numpy
 rich
+requests
