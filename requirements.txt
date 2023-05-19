@@ -7,3 +7,4 @@ pandas==1.3.5
 numpy
 rich
 requests
+flask_swagger_ui

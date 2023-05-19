@@ -5,9 +5,24 @@ from flask_cors import CORS
 import asyncio
 import pandas as pd
 import time
+from flask_swagger_ui import get_swaggerui_blueprint
 
 app = Flask(__name__)
 CORS(app)
+
+SWAGGER_URL = '/'  # URL for exposing Swagger UI (without trailing '/')
+API_URL = '/static/swagger.yaml'  # Our Swagger schema file
+
+# Call factory function to create our blueprint
+swaggerui_blueprint = get_swaggerui_blueprint(
+    SWAGGER_URL,  
+    API_URL,
+    config={  # Swagger UI config overrides
+        'app_name': "Your API Name"
+    }
+)
+
+app.register_blueprint(swaggerui_blueprint)
 
 loop = asyncio.get_event_loop()
 
@@ -49,7 +64,7 @@ async def matrix():
             df = pd.read_json(f, orient='split')
     except:
         # if the matrix file does not exist, return something to let the frontend know that the matrix is not ready
-        return jsonify({'status': 'matrix not ready'})
+        return make_response(jsonify({'status': 'matrix not ready'}), 503)
         
     # get the matrix segment
     segment = get_matrix_segment(df, x, y, i, j)

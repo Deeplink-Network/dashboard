@@ -422,7 +422,7 @@ def refresh_matrix():
                 'price_movement_24h': price_movement_24h,
                 'volume_24h': None, # placeholder,
                 'safety_score': None, # placeholder,
-                'exchanges': None, # placeholder,
+                'exchanges': [], # placeholder,
             }
 
     # combined_df.to_csv('data/combined_df.csv')
