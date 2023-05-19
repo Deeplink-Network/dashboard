@@ -8,6 +8,8 @@ from rich.console import Console
 from rich.logging import RichHandler
 from rich.progress import Progress
 from logging import basicConfig, INFO
+from flask_swagger_ui import get_swaggerui_blueprint
+from whitenoise import WhiteNoise
 
 # Create a console for rich output
 console = Console()
@@ -22,6 +24,21 @@ basicConfig(
 
 app = Flask(__name__)
 CORS(app)
+app.wsgi_app = WhiteNoise(app.wsgi_app, root='static/')  # the 'static' directory for swagger.yaml
+
+SWAGGER_URL = '/api/docs'  # URL for exposing Swagger UI (without trailing '/')
+API_URL = '/static/swagger.yaml'  # Our Swagger schema file
+
+# Call factory function to create our blueprint
+swaggerui_blueprint = get_swaggerui_blueprint(
+    SWAGGER_URL,  
+    API_URL,
+    config={  # Swagger UI config overrides
+        'app_name': "app"
+    }
+)
+
+app.register_blueprint(swaggerui_blueprint)
 
 loop = asyncio.get_event_loop()
 
