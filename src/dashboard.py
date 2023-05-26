@@ -72,8 +72,6 @@ token_liquidity = {}
 
 
 async def refresh_pools(protocol: str):
-    # print('refreshing pools...')
-
     global pools
     global pool_dict
     
@@ -85,7 +83,6 @@ async def refresh_pools(protocol: str):
             key = f"{pool['id']}_{token0_id}_{token1_id}"
             pool_dict[key] = pool
             pools[protocol]['pools'].append(pool)
-        # print(f'{protocol} pool count: {len([pool for pool in pools[protocol]["pools"] if pool is not None])}')
         return
     # get the latest pool data
     new_pools = []
@@ -121,12 +118,8 @@ async def refresh_pools(protocol: str):
                         pool_dict[key] = pool
                         pools[protocol]['pools'].append(pool)  
 
-                # print("Total pairs collected: "+str(len(pool_dict)))
                 last_pool = new_pools[-1]
-                # print("last_pool:", last_pool)
                 last_pool_metric = float(last_pool[metric_to_use])
-                # print(f'last pool metric: {last_pool_metric} {metric_to_use}')
-                # print(f'{protocol} pool count: {len([pool for pool in pools[protocol]["pools"] if pool is not None])}')
                 
 
 def refresh_matrix():
@@ -205,6 +198,7 @@ def refresh_matrix():
 
     # Create a dictionary to store prices and identify tokens
     price_dict = {} # Dictionary for storing prices
+    exchange_dict = {} # Dictionary for storing exchanges
     movement_dict_5m = {}  # Dictionary for storing price movement percentages for 5 minutes
     movement_dict_1h = {}  # Dictionary for storing price movement percentages for 1 hour
     movement_dict_24h = {}  # Dictionary for storing price movement percentages for 24 hours
@@ -234,9 +228,14 @@ def refresh_matrix():
                     price_dict[pair2] = []
                 price_dict[pair1].append((timestamp, price1))
                 price_dict[pair2].append((timestamp, price0))
+                if pair1 not in exchange_dict:
+                    exchange_dict[pair1] = []
+                if pair2 not in exchange_dict:
+                    exchange_dict[pair2] = []
+                exchange_dict[pair1].append(pool['protocol'])
+                exchange_dict[pair2].append(pool['protocol'])
         except Exception as e:
             print(e)
-            # print(pool)
 
     movement_df_5m = pd.DataFrame(0, index=token_set, columns=token_set)  # DataFrame for storing price movement percentages
     movement_df_1h = pd.DataFrame(0, index=token_set, columns=token_set)  # DataFrame for storing 1-hour price movement percentages
@@ -413,6 +412,8 @@ def refresh_matrix():
             price_movement_5m = movement_df_5m.loc[row_id, col_id]
             price_movement_1h = movement_df_1h.loc[row_id, col_id]
             price_movement_24h = movement_df_24h.loc[row_id, col_id]
+            exchanges = []
+
             combined_df.at[row_id, col_id] = {
                 'pair': [TOKEN_SYMBOL_MAP[row_id] + '_' + row_id, TOKEN_SYMBOL_MAP[col_id] + '_' + col_id],
                 'liquidity': liquidity,
@@ -422,8 +423,13 @@ def refresh_matrix():
                 'price_movement_24h': price_movement_24h,
                 'volume_24h': None, # placeholder,
                 'safety_score': None, # placeholder,
-                'exchanges': [], # placeholder,
+                'exchanges': exchange_dict.get((row_id, col_id), [])
             }
+            # check if the cell is a diagonal
+            if row_id == col_id:
+                combined_df.at[row_id, col_id]['diagonal'] = True
+            else:
+                combined_df.at[row_id, col_id]['diagonal'] = False
 
     # combined_df.to_csv('data/combined_df.csv')
     combined_df.to_json('data/combined_df.json', orient='split')
