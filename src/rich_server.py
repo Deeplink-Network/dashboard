@@ -1,6 +1,6 @@
 from dashboard import refresh_pools, refresh_matrix, get_matrix_segment, DEX_LIST
 from threading import Thread
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, redirect
 from flask_cors import CORS
 import asyncio
 import pandas as pd
@@ -58,6 +58,10 @@ async def refresh_data():
 
 def pool_thread_task():
     asyncio.run(refresh_data())
+    
+@app.route('/', methods=['GET'])
+def index():
+    return redirect('/api/docs')
 
 @app.route('/health', methods=['GET'])
 async def health():
