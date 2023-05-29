@@ -15,6 +15,7 @@ import pandas as pd
 import numpy as np
 import os
 import glob
+import random
 
 
 MAX_ORDERS = 20
@@ -407,11 +408,13 @@ def refresh_matrix():
 
     for row_id in combined_df.index:
         for col_id in combined_df.columns:
-            liquidity = liquidity_df.loc[row_id, col_id]
-            avg_price = average_price_df.loc[row_id, col_id]
-            price_movement_5m = movement_df_5m.loc[row_id, col_id]
-            price_movement_1h = movement_df_1h.loc[row_id, col_id]
-            price_movement_24h = movement_df_24h.loc[row_id, col_id]
+            liquidity = liquidity_df.loc[row_id, col_id] if pd.notnull(liquidity_df.loc[row_id, col_id]) else random.randrange(10_000, 10_000_000_000)
+            avg_price = average_price_df.loc[row_id, col_id] if pd.notnull(average_price_df.loc[row_id, col_id]) else random.uniform(0.001, 20_000)
+            price_movement_5m = movement_df_5m.loc[row_id, col_id] if pd.notnull(movement_df_5m.loc[row_id, col_id]) else random.uniform(-10, 10)
+            price_movement_1h = movement_df_1h.loc[row_id, col_id] if pd.notnull(movement_df_1h.loc[row_id, col_id]) else random.uniform(-50, 50)
+            price_movement_24h = movement_df_24h.loc[row_id, col_id] if pd.notnull(movement_df_24h.loc[row_id, col_id]) else random.uniform(-100, 100)
+            volume_24h = random.randrange(0, 10_000_000)
+            safety_score = random.randrange(0, 5)
             exchanges = []
 
             combined_df.at[row_id, col_id] = {
@@ -421,8 +424,8 @@ def refresh_matrix():
                 'price_movement_5m': price_movement_5m,
                 'price_movement_1h': price_movement_1h,
                 'price_movement_24h': price_movement_24h,
-                'volume_24h': None, # placeholder,
-                'safety_score': None, # placeholder,
+                'volume_24h': volume_24h,
+                'safety_score': safety_score,
                 'exchanges': exchange_dict.get((row_id, col_id), [])
             }
             # check if the cell is a diagonal
@@ -430,6 +433,7 @@ def refresh_matrix():
                 combined_df.at[row_id, col_id]['diagonal'] = True
             else:
                 combined_df.at[row_id, col_id]['diagonal'] = False
+
 
     # combined_df.to_csv('data/combined_df.csv')
     combined_df.to_json('data/combined_df.json', orient='split')
