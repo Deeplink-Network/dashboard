@@ -108,10 +108,12 @@ async def matrix_filter():
     # Filter the matrix by asset ID
     filtered_data = filter_matrix_by_asset(df, asset_id)
 
+    if not filtered_data:
+        # If the filtered data is empty, it means the asset ID was not found in the matrix
+        return jsonify({'status': 'asset ID not found'})
+
     # Return the filtered matrix segment
     return jsonify(filtered_data)
-
-
 
 def init():
     threads = [
