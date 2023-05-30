@@ -2,7 +2,7 @@ openapi: 3.0.0
 info:
   version: 1.0.0
   title: Dashboard
-  description: Endpoints for conveying dashboard data from backend to frontend..
+  description: Endpoints for conveying dashboard data from backend to frontend.
 paths:
   /matrix:
     get:
@@ -99,3 +99,20 @@ paths:
         '503':
           description: Indicates that the matrix has not been created yet, should only occur within the first 5 minutes of booting.
 
+  /matrix_filter:
+    get:
+      summary: Filter the matrix by asset ID
+      description: This API endpoint filters the matrix by the provided asset ID and returns the corresponding matrix segment.
+      parameters:
+        - in: query
+          name: asset_id
+          schema:
+            type: string
+          description: The asset ID to filter by.
+      responses:
+        '200':
+          description: A filtered matrix segment successfully returned.
+          content:
+            application/json:
+              schema:
+                type: object
