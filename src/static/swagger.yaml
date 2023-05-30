@@ -35,67 +35,7 @@ paths:
           content:
             application/json:
               schema:
-                type: object
-                properties:
-                  columns:
-                    type: array
-                    items:
-                      type: string
-                    description: The index of the columns.
-                  index:
-                    type: array
-                    items:
-                      type: string
-                    description: The index of the rows.
-                  data:
-                    type: array
-                    items:
-                      type: array
-                      items:
-                        type: object
-                        properties:
-                          pair:
-                            type: array
-                            items:
-                              type: string
-                            description: The two assets in the cell expressed as SYMBOL_ID.
-                          liquidity:
-                            type: number
-                            nullable: true
-                            description: The total liquidity in USD of the pair across the supported DEXs.
-                          average_price:
-                            type: number
-                            nullable: true
-                            description: The average price paid in USD when swapping the row asset for the column asset.
-                          price_movement_5m:
-                            type: number
-                            nullable: true
-                            description: The percentage price change of the pair over the last 5 minutes.
-                          price_movement_1h:
-                            type: number
-                            nullable: true
-                            description: The percentage price change of the pair over the last hour.
-                          price_movement_24h:
-                            type: number
-                            nullable: true
-                            description: The percentage price change of the pair over the last 24 hours.
-                          volume_24h:
-                            type: number
-                            nullable: true
-                            description: The volume in USD of the pair over the last 24 hours.
-                          safety_score:
-                            type: number
-                            nullable: true
-                            description: A safety rating metric for the pair.
-                          exchanges:
-                            type: array
-                            items:
-                              type: string
-                            nullable: true
-                            description: A list of the DEXs this pair is available on.
-                          diagonal:
-                            type: boolean
-                            description: A diagonal matrix item can be considered as irrelevant data.
+                $ref: '#/components/schemas/matrixSegment'
         '503':
           description: Indicates that the matrix has not been created yet, should only occur within the first 5 minutes of booting.
 
@@ -115,4 +55,68 @@ paths:
           content:
             application/json:
               schema:
-                type: object
+                $ref: '#/components/schemas/matrixSegment'
+components:
+  schemas:
+    matrixSegment:
+      type: object
+      properties:
+        columns:
+          type: array
+          items:
+            type: string
+          description: The index of the columns.
+        index:
+          type: array
+          items:
+            type: string
+          description: The index of the rows.
+        data:
+          type: array
+          items:
+            type: array
+            items:
+              type: object
+              properties:
+                pair:
+                  type: array
+                  items:
+                    type: string
+                  description: The two assets in the cell expressed as SYMBOL_ID.
+                liquidity:
+                  type: number
+                  nullable: true
+                  description: The total liquidity in USD of the pair across the supported DEXs.
+                average_price:
+                  type: number
+                  nullable: true
+                  description: The average price paid in USD when swapping the row asset for the column asset.
+                price_movement_5m:
+                  type: number
+                  nullable: true
+                  description: The percentage price change of the pair over the last 5 minutes.
+                price_movement_1h:
+                  type: number
+                  nullable: true
+                  description: The percentage price change of the pair over the last hour.
+                price_movement_24h:
+                  type: number
+                  nullable: true
+                  description: The percentage price change of the pair over the last 24 hours.
+                volume_24h:
+                  type: number
+                  nullable: true
+                  description: The volume in USD of the pair over the last 24 hours.
+                safety_score:
+                  type: number
+                  nullable: true
+                  description: A safety rating metric for the pair.
+                exchanges:
+                  type: array
+                  items:
+                    type: string
+                  nullable: true
+                  description: A list of the DEXs this pair is available on.
+                diagonal:
+                  type: boolean
+                  description: A diagonal matrix item can be considered as irrelevant data.
