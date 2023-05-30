@@ -438,7 +438,21 @@ def refresh_matrix():
     # combined_df.to_csv('data/combined_df.csv')
     combined_df.to_json('data/combined_df.json', orient='split')
 
+
 def get_matrix_segment(df, x, y, i, j):
     segment = df.iloc[x:y, i:j]
     segment_dict = segment.to_dict(orient="split")
     return segment_dict
+
+
+def filter_matrix_by_asset(df, asset_id):
+    filtered_matrix = df.loc[df.index == asset_id, df.columns == asset_id]
+    segment_dict = filtered_matrix.to_dict(orient='split')
+
+    segment = {
+        'data': segment_dict['data'],
+        'index': segment_dict['index'],
+        'columns': segment_dict['columns']
+    }
+
+    return segment
