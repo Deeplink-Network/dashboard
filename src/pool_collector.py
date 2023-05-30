@@ -446,6 +446,8 @@ def reformat_balancer_v2_pools(pool_list):
     
     return all_reformatted_pools
 
+async def collect_curve_volume():
+    pass
 
 async def collect_curve_pools():
     print('collecting data from curve...')

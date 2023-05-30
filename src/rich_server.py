@@ -1,4 +1,4 @@
-from dashboard import refresh_pools, refresh_matrix, get_matrix_segment, DEX_LIST
+from dashboard import refresh_pools, refresh_matrix, get_matrix_segment, filter_matrix_by_asset, DEX_LIST
 from threading import Thread
 from flask import Flask, request, jsonify, redirect
 from flask_cors import CORS
@@ -90,6 +90,28 @@ async def matrix():
 
     # return the matrix segment
     return jsonify(segment)
+
+
+@app.route('/matrix_filter', methods=['GET'])
+async def matrix_filter():
+    asset_id = request.args.get('asset_id')  # Asset ID to filter by
+
+    # Check if the matrix file exists
+    try:
+        # Open the combined_df.json file
+        with open('data/combined_df.json', 'r') as f:
+            df = pd.read_json(f, orient='split')
+    except FileNotFoundError:
+        # If the matrix file does not exist, return a response indicating that the matrix is not ready
+        return jsonify({'status': 'matrix not ready'})
+
+    # Filter the matrix by asset ID
+    filtered_data = filter_matrix_by_asset(df, asset_id)
+
+    # Return the filtered matrix segment
+    return jsonify(filtered_data)
+
+
 
 def init():
     threads = [
