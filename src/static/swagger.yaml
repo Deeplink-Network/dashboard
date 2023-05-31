@@ -3,6 +3,10 @@ info:
   version: 1.0.0
   title: Dashboard
   description: Endpoints for conveying dashboard data from backend to frontend.
+schemes:
+- https
+  host: api.dashboard.deeplink.network
+  basePath: /
 paths:
   /matrix:
     get:
