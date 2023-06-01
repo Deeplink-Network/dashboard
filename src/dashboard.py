@@ -205,6 +205,7 @@ def refresh_matrix():
     movement_dict_24h = {}  # Dictionary for storing price movement percentages for 24 hours
     token_set = set() # Used to avoid duplicates
     TOKEN_SYMBOL_MAP = {} # Dictionary for storing token ids:symbols
+    TOKEN_NAME_MAP = {} # Dictionary for storing token ids:names
 
     # Populate the dictionaries
     for pool in trimmed_sorted_pool_dict.values():
@@ -214,6 +215,8 @@ def refresh_matrix():
         token1_symbol = pool['token1']['symbol']
         TOKEN_SYMBOL_MAP[token0_id] = token0_symbol
         TOKEN_SYMBOL_MAP[token1_id] = token1_symbol
+        TOKEN_NAME_MAP[token0_id] = pool['token0']['name']
+        TOKEN_NAME_MAP[token1_id] = pool['token1']['name']
         token_set.add(token0_id)
         token_set.add(token1_id)
         try:
@@ -415,10 +418,17 @@ def refresh_matrix():
             price_movement_24h = movement_df_24h.loc[row_id, col_id] if pd.notnull(movement_df_24h.loc[row_id, col_id]) else random.uniform(-100, 100)
             volume_24h = random.randrange(0, 10_000_000)
             safety_score = random.randrange(0, 5)
-            exchanges = []
+            pair[row_id] = {
+                'symbol': TOKEN_SYMBOL_MAP[row_id],
+                'name': TOKEN_NAME_MAP[row_id],
+            }
+            pair[col_id] = {
+                'symbol': TOKEN_SYMBOL_MAP[col_id],
+                'name': TOKEN_NAME_MAP[col_id],
+            }
 
             combined_df.at[row_id, col_id] = {
-                'pair': [TOKEN_SYMBOL_MAP[row_id] + '_' + row_id, TOKEN_SYMBOL_MAP[col_id] + '_' + col_id],
+                'pair': pair,
                 'liquidity': liquidity,
                 'average_price': avg_price,
                 'price_movement_5m': price_movement_5m,
@@ -446,13 +456,24 @@ def get_matrix_segment(df, x, y, i, j):
 
 
 def filter_matrix_by_asset(df, asset_id):
-    filtered_rows = df.loc[df.index == asset_id]
-    filtered_columns = df[asset_id].to_frame()
+    # Filter rows where index matches asset_id or any column has asset_id
+    filtered_df = df[df.apply(lambda row: (row.name == asset_id) or (asset_id in row.values), axis=1)]
+    
+    # Also include the column with the asset_id
+    if asset_id in df.columns:
+        filtered_df = pd.concat([filtered_df, df[[asset_id]]], axis=1)
 
-    filtered_matrix = pd.concat([filtered_columns, filtered_rows], axis=1)
-
-    segment_dict = filtered_matrix.to_dict(orient='split')
-
+    # Drop duplicates and handle dictionaries
+    filtered_df_str = filtered_df.applymap(lambda d: json.dumps(d, sort_keys=True) if isinstance(d, dict) else d)
+    filtered_df_str = filtered_df_str.drop_duplicates()
+    filtered_df = filtered_df_str.applymap(lambda s: json.loads(s) if isinstance(s, str) else s)
+    
+    # Drop rows with all NaN values
+    filtered_df = filtered_df.dropna()
+    
+    # Convert to dict
+    segment_dict = filtered_df.to_dict(orient='split')
+    
     segment = {
         'data': segment_dict['data'],
         'index': segment_dict['index'],

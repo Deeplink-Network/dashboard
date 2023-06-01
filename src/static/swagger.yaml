@@ -83,10 +83,27 @@ components:
               type: object
               properties:
                 pair:
-                  type: array
-                  items:
-                    type: string
+                  type: object
                   description: The two assets in the cell expressed as SYMBOL_ID.
+                  properties:
+                    first:
+                      type: object
+                      properties:
+                        symbol:
+                          type: string
+                          description: The symbol of the first asset in the pair.
+                        name:
+                          type: string
+                          description: The name of the first asset in the pair.
+                    second:
+                      type: object
+                      properties:
+                        symbol:
+                          type: string
+                          description: The symbol of the second asset in the pair.
+                        name:
+                          type: string
+                          description: The name of the second asset in the pair.
                 liquidity:
                   type: number
                   nullable: true
