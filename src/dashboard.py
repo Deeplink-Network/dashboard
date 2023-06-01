@@ -446,7 +446,11 @@ def get_matrix_segment(df, x, y, i, j):
 
 
 def filter_matrix_by_asset(df, asset_id):
-    filtered_matrix = df.loc[df.index == asset_id, df.columns == asset_id]
+    filtered_rows = df.loc[df.index == asset_id]
+    filtered_columns = df[asset_id].to_frame()
+
+    filtered_matrix = pd.concat([filtered_columns, filtered_rows], axis=1)
+
     segment_dict = filtered_matrix.to_dict(orient='split')
 
     segment = {
