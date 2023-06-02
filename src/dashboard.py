@@ -420,10 +420,12 @@ def refresh_matrix():
             safety_score = random.randrange(0, 5)
             pair = {}
             pair[row_id] = {
+                'id': row_id,  
                 'symbol': TOKEN_SYMBOL_MAP[row_id],
                 'name': TOKEN_NAME_MAP[row_id],
             }
             pair[col_id] = {
+                'id': col_id,  
                 'symbol': TOKEN_SYMBOL_MAP[col_id],
                 'name': TOKEN_NAME_MAP[col_id],
             }

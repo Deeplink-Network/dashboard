@@ -89,6 +89,9 @@ components:
                     first:
                       type: object
                       properties:
+                        id: 
+                          type: string
+                          description: The ID of the first asset in the pair.
                         symbol:
                           type: string
                           description: The symbol of the first asset in the pair.
@@ -98,6 +101,9 @@ components:
                     second:
                       type: object
                       properties:
+                        id:
+                          type: string
+                          description: The ID of the second asset in the pair.
                         symbol:
                           type: string
                           description: The symbol of the second asset in the pair.
