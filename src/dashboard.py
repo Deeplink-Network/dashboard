@@ -418,6 +418,7 @@ def refresh_matrix():
             price_movement_24h = movement_df_24h.loc[row_id, col_id] if pd.notnull(movement_df_24h.loc[row_id, col_id]) else random.uniform(-100, 100)
             volume_24h = random.randrange(0, 10_000_000)
             safety_score = random.randrange(0, 5)
+            pair = {}
             pair[row_id] = {
                 'symbol': TOKEN_SYMBOL_MAP[row_id],
                 'name': TOKEN_NAME_MAP[row_id],

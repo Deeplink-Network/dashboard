@@ -36,10 +36,12 @@ def pancakeswap_v3_query(X: int, skip: int, max_metric: float):
             token0 {{
             id
             symbol
+            name
             decimals
             }}
             token1 {{
             symbol
+            name
             id
             decimals
             }}
@@ -62,6 +64,7 @@ def pancakeswap_v3_query(X: int, skip: int, max_metric: float):
             token0 {{
             id
             symbol
+            name
             decimals
             }}
             token1 {{
@@ -157,10 +160,12 @@ def uniswap_v3_query(X: int, skip: int, max_metric: float):
             token0 {{
                 id
                 symbol
+                name
                 decimals
             }}
             token1 {{
                 symbol
+                name
                 id
                 decimals
             }}
@@ -182,10 +187,12 @@ def uniswap_v3_query(X: int, skip: int, max_metric: float):
             token0 {{
             id
             symbol
+            name
             decimals
             }}
             token1 {{
             symbol
+            name
             id
             decimals
             }}
@@ -215,6 +222,7 @@ def balancer_v1_query(X: int, skip: int, max_metric: float):
                 address
                 balance
                 symbol
+                name
                 denormWeight
             }}
             }}
@@ -232,6 +240,7 @@ def balancer_v1_query(X: int, skip: int, max_metric: float):
                 address
                 balance
                 symbol
+                name
                 denormWeight
             }}
             }}
@@ -311,11 +320,13 @@ def reformat_balancer_v1_pool(pool, token_prices):
             'token0': {
                 'id': token0['address'],
                 'symbol': token0['symbol'],
+                'name': token0['name'],
                 'denormWeight': token0['denormWeight'],
             },
             'token1': {
                 'id': token1['address'],
                 'symbol': token1['symbol'],
+                'name': token1['name'],
                 'denormWeight': token1['denormWeight']
             },
             'protocol': 'Balancer_V1',
@@ -357,6 +368,7 @@ def balancer_v2_query(X: int, skip: int, max_metric: float = None):
           address
           balance
           symbol
+          name
           weight
           token {{
             totalBalanceUSD
@@ -387,6 +399,7 @@ def reformat_balancer_v2_pools(pool_list):
                 'token0': {
                     'id': token0['address'],
                     'symbol': token0['symbol'],
+                    'name': token0['name'],
                     'weight': token0['weight'],
                     'totalBalanceUSD': token0['token']['totalBalanceUSD'],
                     'priceUSD': token0['token']['latestUSDPrice'],
@@ -394,6 +407,7 @@ def reformat_balancer_v2_pools(pool_list):
                 'token1': {
                     'id': token1['address'],
                     'symbol': token1['symbol'],
+                    'name': token1['name'],
                     'weight': token1['weight'],
                     'totalBalanceUSD': token1['token']['totalBalanceUSD'],
                     'priceUSD': token1['token']['latestUSDPrice'],
@@ -476,12 +490,14 @@ async def collect_curve_pools():
                         new_pair['token0'] = {
                             'id': pair[0]['address'].lower(),
                             'symbol': pair[0]['symbol'],
+                            'name': pair[0]['name'], 
                             'decimals': decimals0,
                             'priceUSD': pair[0]['usdPrice']
                         }
                         new_pair['token1'] = {
                             'id': pair[1]['address'].lower(),
                             'symbol': pair[1]['symbol'],
+                            'name': pair[1]['name'],
                             'decimals': decimals1,
                             'priceUSD': pair[1]['usdPrice']
                         }
@@ -556,11 +572,13 @@ async def get_latest_pool_data(protocol: str, X: int = 1000, skip: int = 0, max_
                         token0 {{
                             id
                             symbol
+                            name
                             decimals
                         }}
                         token1 {{
                             id
                             symbol
+                            name
                             decimals
                         }}
                         }}
@@ -579,11 +597,13 @@ async def get_latest_pool_data(protocol: str, X: int = 1000, skip: int = 0, max_
                         token0 {{
                             id
                             symbol
+                            name
                             decimals
                         }}
                         token1 {{
                             id
                             symbol
+                            name
                             decimals
                         }}
                         }}
