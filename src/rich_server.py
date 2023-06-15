@@ -34,7 +34,7 @@ swaggerui_blueprint = get_swaggerui_blueprint(
     SWAGGER_URL,  
     API_URL,
     config={  # Swagger UI config overrides
-        'app_name': "app"
+        'app_name': "Dashboard"
     }
 )
 

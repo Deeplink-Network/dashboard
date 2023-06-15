@@ -1,0 +1,1973 @@
+[
+    {
+        "id": "0xc9f93163c99695c6526b799ebca2207fdf7d61ad",
+        "reserve0": 9466302.967753,
+        "reserve1": 1142838.668723,
+        "volume_24h": 1701581.0175937898,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "symbol": "USDT",
+            "name": "Tether USD",
+            "decimals": 6,
+            "priceUSD": "0.9989023102791238964599364856505866"
+        },
+        "token1": {
+            "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "name": "USD//C",
+            "decimals": 6,
+            "priceUSD": "1.001108309325008198292153129771367"
+        },
+        "token0Price": 1.0022084232093404,
+        "token1Price": 0.9977964431766913,
+        "reserveUSD": 10600017.191767126,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "CLASSICAL"
+    },
+    {
+        "id": "0x3058ef90929cb8180174d74c507176cca6835d73",
+        "reserve0": 1158887.9284576105,
+        "reserve1": 3455330.839911,
+        "volume_24h": 831.6840386825368,
+        "volume_1h": null,
+        "token0": {
+            "id": "0x6b175474e89094c44da98b954eedeac495271d0f",
+            "symbol": "DAI",
+            "name": "Dai Stablecoin",
+            "decimals": 18,
+            "priceUSD": "1.000391045580765792113968484247818"
+        },
+        "token1": {
+            "id": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "symbol": "USDT",
+            "name": "Tether USD",
+            "decimals": 6,
+            "priceUSD": "0.9989023102791238964599364856505866"
+        },
+        "token0Price": 0.9985118466341553,
+        "token1Price": 1.001490371266862,
+        "reserveUSD": 4610879.06522644,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DSP"
+    },
+    {
+        "id": "0x2109f78b46a789125598f5ad2b7f243751c2934d",
+        "reserve0": 0.39715286,
+        "reserve1": 8909.597333,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+            "symbol": "WBTC",
+            "name": "Wrapped BTC",
+            "decimals": 8,
+            "priceUSD": "267.3447873323777710880164243104167"
+        },
+        "token1": {
+            "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "name": "USD//C",
+            "decimals": 6,
+            "priceUSD": "1.001108309325008198292153129771367"
+        },
+        "token0Price": 0.0037446337342660623,
+        "token1Price": 267.0488146408789,
+        "reserveUSD": 9025.648669701377,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "CLASSICAL"
+    },
+    {
+        "id": "0x8876819535b48b551c9e97ebc07332c7482b4b2d",
+        "reserve0": 11323838.970891489,
+        "reserve1": 384868.242451,
+        "volume_24h": 9068.085062400749,
+        "volume_1h": null,
+        "token0": {
+            "id": "0x43dfc4159d86f3a37a5a4b3d4580b888ad7d4ddd",
+            "symbol": "DODO",
+            "name": "DODO bird",
+            "decimals": 18,
+            "priceUSD": "0.08695470095589618457193049524021371"
+        },
+        "token1": {
+            "id": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "symbol": "USDT",
+            "name": "Tether USD",
+            "decimals": 6,
+            "priceUSD": "0.9989023102791238964599364856505866"
+        },
+        "token0Price": 11.487617107507178,
+        "token1Price": 0.08705025512614781,
+        "reserveUSD": 1369106.8079239626,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "CLASSICAL"
+    },
+    {
+        "id": "0x75c23271661d9d143dcb617222bc4bec783eff34",
+        "reserve0": 206.07041774951497,
+        "reserve1": 43000.07207,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+            "symbol": "WETH",
+            "name": "Wrapped Ether",
+            "decimals": 18,
+            "priceUSD": "2694.406979728496827338972109373494"
+        },
+        "token1": {
+            "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "name": "USD//C",
+            "decimals": 6,
+            "priceUSD": "1.001108309325008198292153129771367"
+        },
+        "token0Price": 0.00037155051811285216,
+        "token1Price": 2691.4240493570433,
+        "reserveUSD": 598285.3013507115,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "CLASSICAL"
+    },
+    {
+        "id": "0x9baa4cb7e2a470a37a984cfeb5a2ba3d07ca9fe5",
+        "reserve0": 0.0,
+        "reserve1": 0.0,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "symbol": "USDT",
+            "name": "Tether USD",
+            "decimals": 6,
+            "priceUSD": "0.9989023102791238964599364856505866"
+        },
+        "token1": {
+            "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "name": "USD//C",
+            "decimals": 6,
+            "priceUSD": "1.001108309325008198292153129771367"
+        },
+        "token0Price": 1.0022084232093404,
+        "token1Price": 0.9977964431766913,
+        "reserveUSD": 0.0,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DPP"
+    },
+    {
+        "id": "0x45738075e430ea625c9164f2c2a28f66864b42e9",
+        "reserve0": 0.0,
+        "reserve1": 0.0,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0x2707ab358b5383d087fe4736da36c1c70179e3bd",
+            "symbol": "UCTC",
+            "name": "UCT Cash",
+            "decimals": 18,
+            "priceUSD": "1.412192816442175581930407531559993"
+        },
+        "token1": {
+            "id": "0xcc7dcc3f649cb3932857d4edc6268e0ef4960995",
+            "symbol": "UCT",
+            "name": "Universal Community Trust",
+            "decimals": 18,
+            "priceUSD": "2.003616406786040479696099796051159"
+        },
+        "token0Price": 1.4187980447555844,
+        "token1Price": 0.7048219467854352,
+        "reserveUSD": 0.0,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0x562c0b218cc9ba06d9eb42f3aef54c54cc5a4650",
+        "reserve0": 180.16144474616135,
+        "reserve1": 857.012621,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0x514910771af9ca656af840dff83e8264ecf986ca",
+            "symbol": "LINK",
+            "name": "ChainLink Token",
+            "decimals": 18,
+            "priceUSD": "33.22106638133366599887821596820404"
+        },
+        "token1": {
+            "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "name": "USD//C",
+            "decimals": 6,
+            "priceUSD": "1.001108309325008198292153129771367"
+        },
+        "token0Price": 0.030134743353317322,
+        "token1Price": 33.184287925581984,
+        "reserveUSD": 6843.117771348707,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "CLASSICAL"
+    },
+    {
+        "id": "0x1b7902a66f133d899130bf44d7d879da89913b2e",
+        "reserve0": 0.03274462934942432,
+        "reserve1": 1255.244058,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e",
+            "symbol": "YFI",
+            "name": "yearn.finance",
+            "decimals": 18,
+            "priceUSD": "5719.833021367371733138794673772698"
+        },
+        "token1": {
+            "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "name": "USD//C",
+            "decimals": 6,
+            "priceUSD": "1.001108309325008198292153129771367"
+        },
+        "token0Price": 0.00017502404451060099,
+        "token1Price": 5713.500695268365,
+        "reserveUSD": 1443.929068919915,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "CLASSICAL"
+    },
+    {
+        "id": "0xb96fd0320e5372a0f3593f28184029f34798d4a0",
+        "reserve0": 0.0,
+        "reserve1": 0.0,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "symbol": "USDT",
+            "name": "Tether USD",
+            "decimals": 6,
+            "priceUSD": "0.9989023102791238964599364856505866"
+        },
+        "token1": {
+            "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "name": "USD//C",
+            "decimals": 6,
+            "priceUSD": "1.001108309325008198292153129771367"
+        },
+        "token0Price": 1.0022084232093404,
+        "token1Price": 0.9977964431766913,
+        "reserveUSD": 0.0,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DPP"
+    },
+    {
+        "id": "0xc74eba6863c11266dcffbbf39de34f5845e0ebe4",
+        "reserve0": 0.0,
+        "reserve1": 0.0,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0x6b175474e89094c44da98b954eedeac495271d0f",
+            "symbol": "DAI",
+            "name": "Dai Stablecoin",
+            "decimals": 18,
+            "priceUSD": "1.000391045580765792113968484247818"
+        },
+        "token1": {
+            "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "name": "USD//C",
+            "decimals": 6,
+            "priceUSD": "1.001108309325008198292153129771367"
+        },
+        "token0Price": 1.0007169833710636,
+        "token1Price": 0.9992835303257788,
+        "reserveUSD": 0.0,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DPP"
+    },
+    {
+        "id": "0xca7b0632bd0e646b0f823927d3d2e61b00fe4d80",
+        "reserve0": 863.1404510645236,
+        "reserve1": 2217.09703,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f",
+            "symbol": "SNX",
+            "name": "Synthetix Network Token",
+            "decimals": 18,
+            "priceUSD": "3.288620507542324991789807126234256"
+        },
+        "token1": {
+            "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "name": "USD//C",
+            "decimals": 6,
+            "priceUSD": "1.001108309325008198292153129771367"
+        },
+        "token0Price": 0.30441588107506007,
+        "token1Price": 3.284979733870813,
+        "reserveUSD": 5058.095647572922,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "CLASSICAL"
+    },
+    {
+        "id": "0xd84820f0e66187c4f3245e1fe5ccc40655dbacc9",
+        "reserve0": 14.917338693232063,
+        "reserve1": 21.832015,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0x57ab1ec28d129707052df4df418d58a2d46d5f51",
+            "symbol": "sUSD",
+            "name": "Synth sUSD",
+            "decimals": 18,
+            "priceUSD": "0.9996360048183817832523488808472988"
+        },
+        "token1": {
+            "id": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "symbol": "USDT",
+            "name": "Tether USD",
+            "decimals": 6,
+            "priceUSD": "0.9989023102791238964599364856505866"
+        },
+        "token0Price": 0.9992660383022206,
+        "token1Price": 1.0007345007932287,
+        "reserveUSD": 36.719959075373644,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DSP"
+    },
+    {
+        "id": "0x0d04146b2fe5d267629a7eb341fb4388dcdbd22f",
+        "reserve0": 2.5647363163281702,
+        "reserve1": 418.171833,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xc00e94cb662c3520282e6f5717214004a7f26888",
+            "symbol": "COMP",
+            "name": "Compound",
+            "decimals": 18,
+            "priceUSD": "39.80394450254929790419471298350074"
+        },
+        "token1": {
+            "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "name": "USD//C",
+            "decimals": 6,
+            "priceUSD": "1.001108309325008198292153129771367"
+        },
+        "token0Price": 0.025150982442478553,
+        "token1Price": 39.759878258713975,
+        "reserveUSD": 520.7219187407688,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "CLASSICAL"
+    },
+    {
+        "id": "0xc226118fcd120634400ce228d61e1538fb21755f",
+        "reserve0": 2420.774286206461,
+        "reserve1": 270.363054,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0x80fb784b7ed66730e8b1dbd9820afd29931aab03",
+            "symbol": "LEND",
+            "name": "EthLend Token",
+            "decimals": 18,
+            "priceUSD": "0.4145676487870636012237512554420978"
+        },
+        "token1": {
+            "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "name": "USD//C",
+            "decimals": 6,
+            "priceUSD": "1.001108309325008198292153129771367"
+        },
+        "token0Price": 2.414824968262809,
+        "token1Price": 0.41410868826629116,
+        "reserveUSD": 1274.2374039706806,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "CLASSICAL"
+    },
+    {
+        "id": "0x979d35396d5d4a0070a0c46327309fcfc627ff7d",
+        "reserve0": 1e-18,
+        "reserve1": 1e-06,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0x6b175474e89094c44da98b954eedeac495271d0f",
+            "symbol": "DAI",
+            "name": "Dai Stablecoin",
+            "decimals": 18,
+            "priceUSD": "1.000391045580765792113968484247818"
+        },
+        "token1": {
+            "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "name": "USD//C",
+            "decimals": 6,
+            "priceUSD": "1.001108309325008198292153129771367"
+        },
+        "token0Price": 1.0007169833710636,
+        "token1Price": 0.9992835303257788,
+        "reserveUSD": 1.0011083093260084e-06,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DPP"
+    },
+    {
+        "id": "0x39eb9c3ca4ea5c9c54797cb1796e8dd4df3d9d7e",
+        "reserve0": 6.080513692451259,
+        "reserve1": 460038.54097590764,
+        "volume_24h": 42844.511743204195,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+            "symbol": "WETH",
+            "name": "Wrapped Ether",
+            "decimals": 18,
+            "priceUSD": "2694.406979728496827338972109373494"
+        },
+        "token1": {
+            "id": "0x850aab69f0e0171a9a49db8be3e71351c8247df4",
+            "symbol": "KONO",
+            "name": "Konomi",
+            "decimals": 18,
+            "priceUSD": "2.994014165367128160818719073225022"
+        },
+        "token0Price": 0.001111195965528868,
+        "token1Price": 899.9312731702146,
+        "reserveUSD": 1393745.2868299687,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0xaa89cab926dcd65b3779aa98d9342fd9a21e5d1c",
+        "reserve0": 34.19549221546846,
+        "reserve1": 0.063831,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xca37530e7c5968627be470081d1c993eb1deaf90",
+            "symbol": "oneDODO",
+            "name": "oneDODO",
+            "decimals": 18,
+            "priceUSD": "0.02403549042303752643716193993625726"
+        },
+        "token1": {
+            "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "name": "USD//C",
+            "decimals": 6,
+            "priceUSD": "1.001108309325008198292153129771367"
+        },
+        "token0Price": 41.65125369630346,
+        "token1Price": 0.02400888115616913,
+        "reserveUSD": 0.8858071701484711,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DSP"
+    },
+    {
+        "id": "0x85f9569b69083c3e6aeffd301bb2c65606b5d575",
+        "reserve0": 0.0,
+        "reserve1": 51.122671,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xa0afaa285ce85974c3c881256cb7f225e3a1178a",
+            "symbol": "wCRES",
+            "name": "Wrapped CRES",
+            "decimals": 18,
+            "priceUSD": "8.466916557925701723738866724849282"
+        },
+        "token1": {
+            "id": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "symbol": "USDT",
+            "name": "Tether USD",
+            "decimals": 6,
+            "priceUSD": "0.9989023102791238964599364856505866"
+        },
+        "token0Price": 0.11797710576751493,
+        "token1Price": 8.476220818389924,
+        "reserveUSD": 51.066554169539565,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "CLASSICAL"
+    },
+    {
+        "id": "0x138c825d993d5ffb7f028408e870ebf50a019543",
+        "reserve0": 652071.3412883182,
+        "reserve1": 3184.45258,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xca37530e7c5968627be470081d1c993eb1deaf90",
+            "symbol": "oneDODO",
+            "name": "oneDODO",
+            "decimals": 18,
+            "priceUSD": "0.02403549042303752643716193993625726"
+        },
+        "token1": {
+            "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "name": "USD//C",
+            "decimals": 6,
+            "priceUSD": "1.001108309325008198292153129771367"
+        },
+        "token0Price": 41.65125369630346,
+        "token1Price": 0.02400888115616913,
+        "reserveUSD": 18860.836417162067,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DSP"
+    },
+    {
+        "id": "0x22591994bc89174a5bdcec57c82c881b65f9b121",
+        "reserve0": 0.0,
+        "reserve1": 0.0,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xd502f487e1841fdc805130e13eae80c61186bc98",
+            "symbol": "ITGR",
+            "name": "Integral",
+            "decimals": 18,
+            "priceUSD": "0.02263994820832809056302855844381837"
+        },
+        "token1": {
+            "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "name": "USD//C",
+            "decimals": 6,
+            "priceUSD": "1.001108309325008198292153129771367"
+        },
+        "token0Price": 44.21866605493166,
+        "token1Price": 0.02261488392159381,
+        "reserveUSD": 0.0,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0xc3ee741fce1302e367d75c4a3441694ae6220344",
+        "reserve0": 4e-18,
+        "reserve1": 3e-18,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0x2707ab358b5383d087fe4736da36c1c70179e3bd",
+            "symbol": "UCTC",
+            "name": "UCT Cash",
+            "decimals": 18,
+            "priceUSD": "1.412192816442175581930407531559993"
+        },
+        "token1": {
+            "id": "0xcc7dcc3f649cb3932857d4edc6268e0ef4960995",
+            "symbol": "UCT",
+            "name": "Universal Community Trust",
+            "decimals": 18,
+            "priceUSD": "2.003616406786040479696099796051159"
+        },
+        "token0Price": 1.4187980447555844,
+        "token1Price": 0.7048219467854352,
+        "reserveUSD": 1.1659620486126823e-17,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DSP"
+    },
+    {
+        "id": "0x94512fd4fb4feb63a6c0f4bedecc4a00ee260528",
+        "reserve0": 3.7140406668586334,
+        "reserve1": 1088.896105,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9",
+            "symbol": "AAVE",
+            "name": "Aave Token",
+            "decimals": 18,
+            "priceUSD": "64.43925505316802541093300286598818"
+        },
+        "token1": {
+            "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "name": "USD//C",
+            "decimals": 6,
+            "priceUSD": "1.001108309325008198292153129771367"
+        },
+        "token0Price": 0.015535690294665979,
+        "token1Price": 64.36791549219669,
+        "reserveUSD": 1329.4329525166784,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "CLASSICAL"
+    },
+    {
+        "id": "0x9f99bd1cb3a51bb6356b5de6598c5a2548fba29b",
+        "reserve0": 57.650667891661044,
+        "reserve1": 0.040843,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0x01e0e2e61f554ecaaec0cc933e739ad90f24a86d",
+            "symbol": "GTON",
+            "name": "Graviton",
+            "decimals": 18,
+            "priceUSD": "3.952626038029656282453452880045623"
+        },
+        "token1": {
+            "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "name": "USD//C",
+            "decimals": 6,
+            "priceUSD": "1.001108309325008198292153129771367"
+        },
+        "token0Price": 0.25327675820909445,
+        "token1Price": 3.948250155564779,
+        "reserveUSD": 227.91241928505747,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0x031816fd297228e4fd537c1789d51509247d0b43",
+        "reserve0": 688643.6741636517,
+        "reserve1": 0.10163778005262313,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0x03e173ad8d1581a4802d3b532ace27a62c5b81dc",
+            "symbol": "THALES",
+            "name": "Thales Token",
+            "decimals": 18,
+            "priceUSD": "0.003430021150175108480088604160365568"
+        },
+        "token1": {
+            "id": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+            "symbol": "WETH",
+            "name": "Wrapped Ether",
+            "decimals": 18,
+            "priceUSD": "2694.406979728496827338972109373494"
+        },
+        "token0Price": 785536.5497063897,
+        "token1Price": 1.2730152408233206e-06,
+        "reserveUSD": 2635.9159112935185,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0x46cf01f14ff6f8c7ef4d6a6b139b1c3d45af9289",
+        "reserve0": 6.843228624594783,
+        "reserve1": 2844920.976936312,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+            "symbol": "WETH",
+            "name": "Wrapped Ether",
+            "decimals": 18,
+            "priceUSD": "2694.406979728496827338972109373494"
+        },
+        "token1": {
+            "id": "0xf411903cbc70a74d22900a5de66a2dda66507255",
+            "symbol": "VRA",
+            "name": "VERA",
+            "decimals": 18,
+            "priceUSD": "0.01549719294269209243969105200081216"
+        },
+        "token0Price": 5.751615498061719e-06,
+        "token1Price": 173864.19525731468,
+        "reserveUSD": 62526.732256280135,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0x921c4474b11ce3a79429e31da78bd022bd1b96c2",
+        "reserve0": 24.904117,
+        "reserve1": 18616.474350535453,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "name": "USD//C",
+            "decimals": 6,
+            "priceUSD": "1.001108309325008198292153129771367"
+        },
+        "token1": {
+            "id": "0xbc138bd20c98186cc0342c8e380953af0cb48ba8",
+            "symbol": "CNDL",
+            "name": "Candle",
+            "decimals": 18,
+            "priceUSD": "0.004662425227929384314579223027693302"
+        },
+        "token0Price": 0.004657263539319736,
+        "token1Price": 214.7183623081088,
+        "reserveUSD": 111.72963813213899,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0x4cf7fa72ffba0588e34883ce0797cec3890ecec4",
+        "reserve0": 4.023926397117344,
+        "reserve1": 4.557293128226877,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+            "symbol": "WETH",
+            "name": "Wrapped Ether",
+            "decimals": 18,
+            "priceUSD": "2694.406979728496827338972109373494"
+        },
+        "token1": {
+            "id": "0xc3d088842dcf02c13699f936bb83dfbbc6f721ab",
+            "symbol": "vETH",
+            "name": "Voucher Ethereum",
+            "decimals": 18,
+            "priceUSD": "1447.189401061355346378718850857733"
+        },
+        "token0Price": 0.5371086892029882,
+        "token1Price": 1.861820559045308,
+        "reserveUSD": 17437.3616830064,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0x983dfba1c0724786598af0e63a9a6f94aabd24a1",
+        "reserve0": 47.32743482024855,
+        "reserve1": 66817.0624830256,
+        "volume_24h": 1968.2557459854058,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+            "symbol": "WETH",
+            "name": "Wrapped Ether",
+            "decimals": 18,
+            "priceUSD": "2694.406979728496827338972109373494"
+        },
+        "token1": {
+            "id": "0x85f17cf997934a597031b2e18a9ab6ebd4b9f6a4",
+            "symbol": "NEAR",
+            "name": "NEAR",
+            "decimals": 24,
+            "priceUSD": "3.052129329171619023337626781833699"
+        },
+        "token0Price": 0.0011327647798326176,
+        "token1Price": 882.7958088066301,
+        "reserveUSD": 331453.6868058583,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0x45021500fa6d83c8adca14c7519aff3e43e61779",
+        "reserve0": 2e-06,
+        "reserve1": 1.164025076747e-06,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "symbol": "USDT",
+            "name": "Tether USD",
+            "decimals": 6,
+            "priceUSD": "0.9989023102791238964599364856505866"
+        },
+        "token1": {
+            "id": "0xf30547ff2df1f1cbe5c8dd758b3dd098c856e38f",
+            "symbol": "Rai",
+            "name": "Rai.Finance",
+            "decimals": 18,
+            "priceUSD": "2.322031414162188134233839885407611"
+        },
+        "token0Price": 2.3245830851200466,
+        "token1Price": 0.4301846668338627,
+        "reserveUSD": 4.700707415637334e-06,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0x13d3cfc092bd6156e60375ac0b236c130c81f61a",
+        "reserve0": 0.0,
+        "reserve1": 0.0,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xff20817765cb7f73d4bde2e66e067e58d11095c2",
+            "symbol": "AMP",
+            "name": "Amp",
+            "decimals": 18,
+            "priceUSD": "0.06172671703960253011352564060819795"
+        },
+        "token1": {
+            "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "name": "USD//C",
+            "decimals": 6,
+            "priceUSD": "1.001108309325008198292153129771367"
+        },
+        "token0Price": 16.218395491254114,
+        "token1Price": 0.061658380481549924,
+        "reserveUSD": 0.0,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0x211f4f71c7b3b9eea68b2082adb48cb7cce3cd9f",
+        "reserve0": 0.0,
+        "reserve1": 0.0,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0x2707ab358b5383d087fe4736da36c1c70179e3bd",
+            "symbol": "UCTC",
+            "name": "UCT Cash",
+            "decimals": 18,
+            "priceUSD": "1.412192816442175581930407531559993"
+        },
+        "token1": {
+            "id": "0xcc7dcc3f649cb3932857d4edc6268e0ef4960995",
+            "symbol": "UCT",
+            "name": "Universal Community Trust",
+            "decimals": 18,
+            "priceUSD": "2.003616406786040479696099796051159"
+        },
+        "token0Price": 1.4187980447555844,
+        "token1Price": 0.7048219467854352,
+        "reserveUSD": 0.0,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DPP"
+    },
+    {
+        "id": "0x4b635f538460f6f1d6e6fa74d73fe44c1934cb19",
+        "reserve0": 3.5e-17,
+        "reserve1": 3e-18,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0x300a902513815028e97fc79e92082ce6a98d3b74",
+            "symbol": "SOX",
+            "name": "Ethersocks",
+            "decimals": 18,
+            "priceUSD": "202.6242332803310195868538500808935"
+        },
+        "token1": {
+            "id": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+            "symbol": "WETH",
+            "name": "Wrapped Ether",
+            "decimals": 18,
+            "priceUSD": "2694.406979728496827338972109373494"
+        },
+        "token0Price": 13.297555460707306,
+        "token1Price": 0.0752017920101842,
+        "reserveUSD": 1.5175069103997075e-14,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0x9a041c4e977e1a894a6e6cd1495d7bd97c788d9a",
+        "reserve0": 0.0,
+        "reserve1": 0.0,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xe63d6b308bce0f6193aec6b7e6eba005f41e36ab",
+            "symbol": "STN",
+            "name": "Stone Token",
+            "decimals": 18,
+            "priceUSD": "3.077595217395842866020745937200846"
+        },
+        "token1": {
+            "id": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+            "symbol": "WETH",
+            "name": "Wrapped Ether",
+            "decimals": 18,
+            "priceUSD": "2694.406979728496827338972109373494"
+        },
+        "token0Price": 875.491021203371,
+        "token1Price": 0.001142216168734078,
+        "reserveUSD": 0.0,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0x181d93ea28023bf40c8bb94796c55138719803b4",
+        "reserve0": 0.0,
+        "reserve1": 103695.978797,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0x4691937a7508860f876c9c0a2a617e7d9e945d4b",
+            "symbol": "WOO",
+            "name": "Wootrade Network",
+            "decimals": 18,
+            "priceUSD": "0.6212601882669283499544896144732393"
+        },
+        "token1": {
+            "id": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "symbol": "USDT",
+            "name": "Tether USD",
+            "decimals": 6,
+            "priceUSD": "0.9989023102791238964599364856505866"
+        },
+        "token0Price": 1.607864674325372,
+        "token1Price": 0.6219428885826975,
+        "reserveUSD": 103582.15278697835,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "CLASSICAL"
+    },
+    {
+        "id": "0x5e0c0d1271c02659401d67ebfc5a783e265f3344",
+        "reserve0": 0.0,
+        "reserve1": 0.0,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xcc7dcc3f649cb3932857d4edc6268e0ef4960995",
+            "symbol": "UCT",
+            "name": "Universal Community Trust",
+            "decimals": 18,
+            "priceUSD": "2.003616406786040479696099796051159"
+        },
+        "token1": {
+            "id": "0x2707ab358b5383d087fe4736da36c1c70179e3bd",
+            "symbol": "UCTC",
+            "name": "UCT Cash",
+            "decimals": 18,
+            "priceUSD": "1.412192816442175581930407531559993"
+        },
+        "token0Price": 0.7048219467854352,
+        "token1Price": 1.4187980447555844,
+        "reserveUSD": 0.0,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DPP"
+    },
+    {
+        "id": "0xcc5cffeb08e0fad4b55b1256c12c419cfd3ebcc8",
+        "reserve0": 33682.84535771166,
+        "reserve1": 541.197736,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0x59e9261255644c411afdd00bd89162d09d862e38",
+            "symbol": "ETHA",
+            "name": "ETHA",
+            "decimals": 18,
+            "priceUSD": "0.01616997764889121722938352211176062"
+        },
+        "token1": {
+            "id": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "symbol": "USDT",
+            "name": "Tether USD",
+            "decimals": 6,
+            "priceUSD": "0.9989023102791238964599364856505866"
+        },
+        "token0Price": 61.77512003843859,
+        "token1Price": 0.016187746772127126,
+        "reserveUSD": 1085.2545253934882,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0x75282dec001047d4001dd73d0dc20911c19f439e",
+        "reserve0": 0.0,
+        "reserve1": 0.0,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0x9ad37205d608b8b219e6a2573f922094cec5c200",
+            "symbol": "iZi",
+            "name": "izumi Token",
+            "decimals": 18,
+            "priceUSD": "0.08457826634514218842886214865634404"
+        },
+        "token1": {
+            "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "name": "USD//C",
+            "decimals": 6,
+            "priceUSD": "1.001108309325008198292153129771367"
+        },
+        "token0Price": 11.836472330134342,
+        "token1Price": 0.08448463124051844,
+        "reserveUSD": 0.0,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0xf017b4e2ca8155688327872ea8334ad17d668a9a",
+        "reserve0": 0.0,
+        "reserve1": 0.0,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+            "symbol": "WETH",
+            "name": "Wrapped Ether",
+            "decimals": 18,
+            "priceUSD": "2694.406979728496827338972109373494"
+        },
+        "token1": {
+            "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "name": "USD//C",
+            "decimals": 6,
+            "priceUSD": "1.001108309325008198292153129771367"
+        },
+        "token0Price": 0.00037155051811285216,
+        "token1Price": 2691.4240493570433,
+        "reserveUSD": 0.0,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DPP"
+    },
+    {
+        "id": "0x5bf5c3b793eac2e5cbb7e1047efbddb4de2eefd9",
+        "reserve0": 0.0,
+        "reserve1": 0.0,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xc67b12049c2d0cf6e476bc64c7f82fc6c63cffc5",
+            "symbol": "GDT",
+            "name": "GDT",
+            "decimals": 8,
+            "priceUSD": "0.4197900652119852642066601495460131"
+        },
+        "token1": {
+            "id": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "symbol": "USDT",
+            "name": "Tether USD",
+            "decimals": 6,
+            "priceUSD": "0.9989023102791238964599364856505866"
+        },
+        "token0Price": 2.3795282286509067,
+        "token1Price": 0.42025137082192054,
+        "reserveUSD": 0.0,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0x743eb9276040cde0de9ed7a5b4ea5da874c60656",
+        "reserve0": 0.001782460940106203,
+        "reserve1": 3997.734412,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+            "symbol": "WETH",
+            "name": "Wrapped Ether",
+            "decimals": 18,
+            "priceUSD": "2694.406979728496827338972109373494"
+        },
+        "token1": {
+            "id": "0xab48b42e6a98e671ff58338d5dd2fe44409b82d6",
+            "symbol": "BOBBY",
+            "name": "BobbyCoin",
+            "decimals": 18,
+            "priceUSD": "300.9077696798618716546904911961084"
+        },
+        "token0Price": 0.11167866322487888,
+        "token1Price": 8.954261907544288,
+        "reserveUSD": 1202954.148362552,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0x2e16a8cf3d0884fc701b1dc0ff9466769dfe4f29",
+        "reserve0": 150.8474383871594,
+        "reserve1": 2.178216,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0x8807e69dc04155af64172cd6f0b4738f8068d0d4",
+            "symbol": "Meta",
+            "name": "Meta Network",
+            "decimals": 18,
+            "priceUSD": "8.537303028943276448606109183452342"
+        },
+        "token1": {
+            "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "name": "USD//C",
+            "decimals": 6,
+            "priceUSD": "1.001108309325008198292153129771367"
+        },
+        "token0Price": 0.11726282948268765,
+        "token1Price": 8.527851531568553,
+        "reserveUSD": 1290.0109227881346,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0x02b7db0b68c4c0f005e31cd27e17e39540a45b32",
+        "reserve0": 0.0,
+        "reserve1": 0.0,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0x42bbfa2e77757c645eeaad1655e0911a7553efbc",
+            "symbol": "BOBA",
+            "name": "Boba Token",
+            "decimals": 18,
+            "priceUSD": "2.903075220905357615697777523012259"
+        },
+        "token1": {
+            "id": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+            "symbol": "WETH",
+            "name": "Wrapped Ether",
+            "decimals": 18,
+            "priceUSD": "2694.406979728496827338972109373494"
+        },
+        "token0Price": 928.1216553831543,
+        "token1Price": 0.0010774449601514493,
+        "reserveUSD": 0.0,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0xcc53b8834d44aa69b1baa2002f5b33270fe55ea2",
+        "reserve0": 9.492597702756843,
+        "reserve1": 4566657.66241102,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+            "symbol": "WETH",
+            "name": "Wrapped Ether",
+            "decimals": 18,
+            "priceUSD": "2694.406979728496827338972109373494"
+        },
+        "token1": {
+            "id": "0x55296f69f40ea6d20e478533c15a6b08b654e758",
+            "symbol": "XYO",
+            "name": "XY Oracle",
+            "decimals": 18,
+            "priceUSD": "0.005318088521531900705692905469184377"
+        },
+        "token0Price": 1.973751018885714e-06,
+        "token1Price": 506649.51679900964,
+        "reserveUSD": 49862.81120229648,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0x6fd7c843cd747d7d29923d68473957921f60cd4c",
+        "reserve0": 0.8250021644409942,
+        "reserve1": 251.642685778422,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+            "symbol": "WETH",
+            "name": "Wrapped Ether",
+            "decimals": 18,
+            "priceUSD": "2694.406979728496827338972109373494"
+        },
+        "token1": {
+            "id": "0x4fadc7a98f2dc96510e42dd1a74141eeae0c1543",
+            "symbol": "WAR",
+            "name": "Wrapped AR",
+            "decimals": 12,
+            "priceUSD": "28.97725533952683912220918095891438"
+        },
+        "token0Price": 0.010754594817167057,
+        "token1Price": 92.9835123498792,
+        "reserveUSD": 9514.805950286585,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0x4ea2f709e074cc2f0a41247f4a18eeec4a226409",
+        "reserve0": 0.0,
+        "reserve1": 0.0,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0x42bbfa2e77757c645eeaad1655e0911a7553efbc",
+            "symbol": "BOBA",
+            "name": "Boba Token",
+            "decimals": 18,
+            "priceUSD": "2.903075220905357615697777523012259"
+        },
+        "token1": {
+            "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "name": "USD//C",
+            "decimals": 6,
+            "priceUSD": "1.001108309325008198292153129771367"
+        },
+        "token0Price": 0.34484408192936905,
+        "token1Price": 2.899861277610152,
+        "reserveUSD": 0.0,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0x736704e8357cd2c0f60391505ec01475f07950a3",
+        "reserve0": 0.0,
+        "reserve1": 0.0,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0x13154efe79d4d7f86407d56f8f6a1b07fb0b80ff",
+            "symbol": "CLAIM",
+            "name": "CLAIM",
+            "decimals": 18,
+            "priceUSD": "0.292478286164353858290628199436066"
+        },
+        "token1": {
+            "id": "0x6b175474e89094c44da98b954eedeac495271d0f",
+            "symbol": "DAI",
+            "name": "Dai Stablecoin",
+            "decimals": 18,
+            "priceUSD": "1.000391045580765792113968484247818"
+        },
+        "token0Price": 3.420394240886009,
+        "token1Price": 0.2923639585303953,
+        "reserveUSD": 0.0,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0x6bd8a88375d7e310d6fdc7e1036e5ab7031e9642",
+        "reserve0": 21.016081185429023,
+        "reserve1": 279.42384461238294,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xde30da39c46104798bb5aa3fe8b9e0e1f348163f",
+            "symbol": "GTC",
+            "name": "Gitcoin",
+            "decimals": 18,
+            "priceUSD": "2.162393069192526826276893080302072"
+        },
+        "token1": {
+            "id": "0x43dfc4159d86f3a37a5a4b3d4580b888ad7d4ddd",
+            "symbol": "DODO",
+            "name": "DODO bird",
+            "decimals": 18,
+            "priceUSD": "0.08695470095589618457193049524021371"
+        },
+        "token0Price": 0.04021225474440062,
+        "token1Price": 24.868041007803615,
+        "reserveUSD": 69.74224514517574,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0x3dabc75ffd70695852da101b0c0d018781320551",
+        "reserve0": 1e-06,
+        "reserve1": 1e-06,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "symbol": "USDT",
+            "name": "Tether USD",
+            "decimals": 6,
+            "priceUSD": "0.9989023102791238964599364856505866"
+        },
+        "token1": {
+            "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "name": "USD//C",
+            "decimals": 6,
+            "priceUSD": "1.001108309325008198292153129771367"
+        },
+        "token0Price": 1.0022084232093404,
+        "token1Price": 0.9977964431766913,
+        "reserveUSD": 2.000010619604132e-06,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DPP"
+    },
+    {
+        "id": "0xd33cfae12c73761e00916d449a0b7e12105359dd",
+        "reserve0": 0.0,
+        "reserve1": 0.0,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xe4fa3c576c31696322e8d7165c5965d5a1f6a1a5",
+            "symbol": "GFX",
+            "name": "GamyFi",
+            "decimals": 18,
+            "priceUSD": "9.420215824925848365174681145299657"
+        },
+        "token1": {
+            "id": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+            "symbol": "WETH",
+            "name": "Wrapped Ether",
+            "decimals": 18,
+            "priceUSD": "2694.406979728496827338972109373494"
+        },
+        "token0Price": 286.02391174511183,
+        "token1Price": 0.00349621118702531,
+        "reserveUSD": 0.0,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0xc6f949a368ee764ca8738065c823675417d0de09",
+        "reserve0": 11827.044935,
+        "reserve1": 77328.09232574,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "symbol": "USDT",
+            "name": "Tether USD",
+            "decimals": 6,
+            "priceUSD": "0.9989023102791238964599364856505866"
+        },
+        "token1": {
+            "id": "0xe83ce6bfb580583bd6a62b4be7b34fc25f02910d",
+            "symbol": "WABBC",
+            "name": "Wrapped ABBC",
+            "decimals": 8,
+            "priceUSD": "0.9312139610436114921339033685038383"
+        },
+        "token0Price": 0.9322372683104535,
+        "token1Price": 1.0726882886932387,
+        "reserveUSD": 83823.06166394494,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0x4bc760462e21478956f05c7c2957f7abe14d6092",
+        "reserve0": 5.0774e-14,
+        "reserve1": 2e-18,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0x89dcff5fd892f2bfc8b75dba12804b651f769579",
+            "symbol": "STKR",
+            "name": "Staker",
+            "decimals": 18,
+            "priceUSD": "0.0433478217408667727467911434923836"
+        },
+        "token1": {
+            "id": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+            "symbol": "WETH",
+            "name": "Wrapped Ether",
+            "decimals": 18,
+            "priceUSD": "2694.406979728496827338972109373494"
+        },
+        "token0Price": 62157.840267860716,
+        "token1Price": 1.6088075063268554e-05,
+        "reserveUSD": 7.589756260527764e-15,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0x9d9793e1e18cdee6cf63818315d55244f73ec006",
+        "reserve0": 57300.834838286704,
+        "reserve1": 104.790599,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0x054f76beed60ab6dbeb23502178c52d6c5debe40",
+            "symbol": "FIN",
+            "name": "DeFiner",
+            "decimals": 18,
+            "priceUSD": "0.002191628030823496317858852220719289"
+        },
+        "token1": {
+            "id": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "symbol": "USDT",
+            "name": "Tether USD",
+            "decimals": 6,
+            "priceUSD": "0.9989023102791238964599364856505866"
+        },
+        "token0Price": 455.78095198197934,
+        "token1Price": 0.002194036402029232,
+        "reserveUSD": 230.25768725780995,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "CLASSICAL"
+    },
+    {
+        "id": "0xa102ebd696d7e210f6ee79ff57f709774617ffaf",
+        "reserve0": 0.0,
+        "reserve1": 0.0,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xcc7dcc3f649cb3932857d4edc6268e0ef4960995",
+            "symbol": "UCT",
+            "name": "Universal Community Trust",
+            "decimals": 18,
+            "priceUSD": "2.003616406786040479696099796051159"
+        },
+        "token1": {
+            "id": "0xb0dba4bd6b6c4fc9a1263d8c19a57a6bdd740a52",
+            "symbol": "EILN",
+            "name": "Eilien",
+            "decimals": 18,
+            "priceUSD": "0.1702864537909508450969831180459702"
+        },
+        "token0Price": 0.08498954850549652,
+        "token1Price": 11.766152633877413,
+        "reserveUSD": 0.0,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0xc8d5a3c04b99f8511435f2aa4d7215508154a7a9",
+        "reserve0": 0.0,
+        "reserve1": 0.0,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0x903bef1736cddf2a537176cf3c64579c3867a881",
+            "symbol": "ICHI",
+            "name": "ichi.farm",
+            "decimals": 9,
+            "priceUSD": "71.26792280309668875717369505077723"
+        },
+        "token1": {
+            "id": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+            "symbol": "WETH",
+            "name": "Wrapped Ether",
+            "decimals": 18,
+            "priceUSD": "2694.406979728496827338972109373494"
+        },
+        "token0Price": 37.80672810084232,
+        "token1Price": 0.026450318507665847,
+        "reserveUSD": 0.0,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0x15bb11b1e5f9f15aa3e54fccf2558465848f7a5a",
+        "reserve0": 4e-18,
+        "reserve1": 5e-18,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0x2707ab358b5383d087fe4736da36c1c70179e3bd",
+            "symbol": "UCTC",
+            "name": "UCT Cash",
+            "decimals": 18,
+            "priceUSD": "1.412192816442175581930407531559993"
+        },
+        "token1": {
+            "id": "0xcc7dcc3f649cb3932857d4edc6268e0ef4960995",
+            "symbol": "UCT",
+            "name": "Universal Community Trust",
+            "decimals": 18,
+            "priceUSD": "2.003616406786040479696099796051159"
+        },
+        "token0Price": 1.4187980447555844,
+        "token1Price": 0.7048219467854352,
+        "reserveUSD": 1.5666853299698905e-17,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DSP"
+    },
+    {
+        "id": "0xbb41e9b6762e492b5d53b3c56106c7fa727beeea",
+        "reserve0": 0.8056266003679053,
+        "reserve1": 1.8e-05,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xafa4a1aeb4b02ea051994fcabb4790276a2bcf5b",
+            "symbol": "VAL",
+            "name": "Valkyrie Network",
+            "decimals": 18,
+            "priceUSD": "0.8432544683350906841536289093337983"
+        },
+        "token1": {
+            "id": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "symbol": "USDT",
+            "name": "Tether USD",
+            "decimals": 6,
+            "priceUSD": "0.9989023102791238964599364856505866"
+        },
+        "token0Price": 1.184579919572015,
+        "token1Price": 0.8441811172700757,
+        "reserveUSD": 0.6793662108114297,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0xb838f49dd3621f4e76837ecf072aa6822b27e7f6",
+        "reserve0": 0.0,
+        "reserve1": 0.0,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0x216e9d8a521d93ec769635859c57938119fe5369",
+            "symbol": "BDT",
+            "name": "Bandot",
+            "decimals": 18,
+            "priceUSD": "0.004995565567692303606019013987347603"
+        },
+        "token1": {
+            "id": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "symbol": "USDT",
+            "name": "Tether USD",
+            "decimals": 6,
+            "priceUSD": "0.9989023102791238964599364856505866"
+        },
+        "token0Price": 199.95780192322965,
+        "token1Price": 0.005001055174550942,
+        "reserveUSD": 0.0,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0xdf8f42987c8a84a32dccea00c783763ef80ce957",
+        "reserve0": 0.0,
+        "reserve1": 0.0,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xb0dba4bd6b6c4fc9a1263d8c19a57a6bdd740a52",
+            "symbol": "EILN",
+            "name": "Eilien",
+            "decimals": 18,
+            "priceUSD": "0.1702864537909508450969831180459702"
+        },
+        "token1": {
+            "id": "0xcc7dcc3f649cb3932857d4edc6268e0ef4960995",
+            "symbol": "UCT",
+            "name": "Universal Community Trust",
+            "decimals": 18,
+            "priceUSD": "2.003616406786040479696099796051159"
+        },
+        "token0Price": 11.766152633877413,
+        "token1Price": 0.08498954850549652,
+        "reserveUSD": 0.0,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DPP"
+    },
+    {
+        "id": "0xb90929286d929e4aaf060364d5b584841bcd934e",
+        "reserve0": 455.0674569555354,
+        "reserve1": 553.2680959129432,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0x106538cc16f938776c7c180186975bca23875287",
+            "symbol": "BASv2",
+            "name": "BASv2",
+            "decimals": 18,
+            "priceUSD": "0.3033620835135902633182679517666341"
+        },
+        "token1": {
+            "id": "0x43dfc4159d86f3a37a5a4b3d4580b888ad7d4ddd",
+            "symbol": "DODO",
+            "name": "DODO bird",
+            "decimals": 18,
+            "priceUSD": "0.08695470095589618457193049524021371"
+        },
+        "token0Price": 0.2866366816471338,
+        "token1Price": 3.488737011095661,
+        "reserveUSD": 186.15947370981036,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0x1dde6fd114da115bc51a4925f5a51f453e33e3b3",
+        "reserve0": 0.000164278648880837,
+        "reserve1": 2e-06,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xcd6adc6b8bd396e2d53ccd7d7257b4de55be4fbe",
+            "symbol": "CFL365",
+            "name": "CFL365 Finance",
+            "decimals": 18,
+            "priceUSD": "0.00586547416301293847721380929562673"
+        },
+        "token1": {
+            "id": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "symbol": "USDT",
+            "name": "Tether USD",
+            "decimals": 6,
+            "priceUSD": "0.9989023102791238964599364856505866"
+        },
+        "token0Price": 170.30205615397585,
+        "token1Price": 0.005871919708919229,
+        "reserveUSD": 2.9613767911034713e-06,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0x5209f194522331bcc3b47971bf83ea9a1ceee6c2",
+        "reserve0": 16268.01627636378,
+        "reserve1": 144.642399,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0x4bdcb66b968060d9390c1d12bd29734496205581",
+            "symbol": "ACQ",
+            "name": "Acquire.Fi",
+            "decimals": 18,
+            "priceUSD": "0.01369904018772572412358226096928205"
+        },
+        "token1": {
+            "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "name": "USD//C",
+            "decimals": 6,
+            "priceUSD": "1.001108309325008198292153129771367"
+        },
+        "token0Price": 73.07871906398205,
+        "token1Price": 0.013683874222322886,
+        "reserveUSD": 367.6589162640869,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0xa187e9583d0997547e7ae667b312718719f586c4",
+        "reserve0": 0.0,
+        "reserve1": 0.0,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "symbol": "USDT",
+            "name": "Tether USD",
+            "decimals": 6,
+            "priceUSD": "0.9989023102791238964599364856505866"
+        },
+        "token1": {
+            "id": "0x55296f69f40ea6d20e478533c15a6b08b654e758",
+            "symbol": "XYO",
+            "name": "XY Oracle",
+            "decimals": 18,
+            "priceUSD": "0.005318088521531900705692905469184377"
+        },
+        "token0Price": 0.005323932547563999,
+        "token1Price": 187.83107995189695,
+        "reserveUSD": 0.0,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0x4c5ce31fbaecb80dbd68330b4b0d926153c26267",
+        "reserve0": 0.0,
+        "reserve1": 0.0,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0x903bef1736cddf2a537176cf3c64579c3867a881",
+            "symbol": "ICHI",
+            "name": "ichi.farm",
+            "decimals": 9,
+            "priceUSD": "71.26792280309668875717369505077723"
+        },
+        "token1": {
+            "id": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+            "symbol": "WETH",
+            "name": "Wrapped Ether",
+            "decimals": 18,
+            "priceUSD": "2694.406979728496827338972109373494"
+        },
+        "token0Price": 37.80672810084232,
+        "token1Price": 0.026450318507665847,
+        "reserveUSD": 0.0,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0x84d423b24b2e8e11e01a4be059ed482688e36710",
+        "reserve0": 0.0,
+        "reserve1": 0.0,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xb0dba4bd6b6c4fc9a1263d8c19a57a6bdd740a52",
+            "symbol": "EILN",
+            "name": "Eilien",
+            "decimals": 18,
+            "priceUSD": "0.1702864537909508450969831180459702"
+        },
+        "token1": {
+            "id": "0xcc7dcc3f649cb3932857d4edc6268e0ef4960995",
+            "symbol": "UCT",
+            "name": "Universal Community Trust",
+            "decimals": 18,
+            "priceUSD": "2.003616406786040479696099796051159"
+        },
+        "token0Price": 11.766152633877413,
+        "token1Price": 0.08498954850549652,
+        "reserveUSD": 0.0,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DPP"
+    },
+    {
+        "id": "0xe7dd7d1ee98d50b2eaedda1eaf1beb21d1c2ec38",
+        "reserve0": 0.0,
+        "reserve1": 0.0,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xcc7dcc3f649cb3932857d4edc6268e0ef4960995",
+            "symbol": "UCT",
+            "name": "Universal Community Trust",
+            "decimals": 18,
+            "priceUSD": "2.003616406786040479696099796051159"
+        },
+        "token1": {
+            "id": "0xb0dba4bd6b6c4fc9a1263d8c19a57a6bdd740a52",
+            "symbol": "EILN",
+            "name": "Eilien",
+            "decimals": 18,
+            "priceUSD": "0.1702864537909508450969831180459702"
+        },
+        "token0Price": 0.08498954850549652,
+        "token1Price": 11.766152633877413,
+        "reserveUSD": 0.0,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0xccbb348998d323b7ea338fc4af841a830a9e40c5",
+        "reserve0": 3e-18,
+        "reserve1": 4e-18,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xcc7dcc3f649cb3932857d4edc6268e0ef4960995",
+            "symbol": "UCT",
+            "name": "Universal Community Trust",
+            "decimals": 18,
+            "priceUSD": "2.003616406786040479696099796051159"
+        },
+        "token1": {
+            "id": "0x2707ab358b5383d087fe4736da36c1c70179e3bd",
+            "symbol": "UCTC",
+            "name": "UCT Cash",
+            "decimals": 18,
+            "priceUSD": "1.412192816442175581930407531559993"
+        },
+        "token0Price": 0.7048219467854352,
+        "token1Price": 1.4187980447555844,
+        "reserveUSD": 1.1659620486126823e-17,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DSP"
+    },
+    {
+        "id": "0xf017b4e2ca8155688327872ea8334ad17d668a9a",
+        "reserve0": 0.0,
+        "reserve1": 0.0,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+            "symbol": "WETH",
+            "name": "Wrapped Ether",
+            "decimals": 18,
+            "priceUSD": "2694.406979728496827338972109373494"
+        },
+        "token1": {
+            "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "name": "USD//C",
+            "decimals": 6,
+            "priceUSD": "1.001108309325008198292153129771367"
+        },
+        "token0Price": 0.00037155051811285216,
+        "token1Price": 2691.4240493570433,
+        "reserveUSD": 0.0,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DPP"
+    },
+    {
+        "id": "0xfdb3c472f9b87eef283420882f635471a80e5a75",
+        "reserve0": 164575.9502603413,
+        "reserve1": 2202.671685,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0x94a7f270cd12545a277e656266aef5e27df3eb28",
+            "symbol": "WSTRM",
+            "name": "Wrapped Stream",
+            "decimals": 18,
+            "priceUSD": "0.01265335295860425596057388221500948"
+        },
+        "token1": {
+            "id": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "symbol": "USDT",
+            "name": "Tether USD",
+            "decimals": 6,
+            "priceUSD": "0.9989023102791238964599364856505866"
+        },
+        "token0Price": 78.94368500958255,
+        "token1Price": 0.012667257677148151,
+        "reserveUSD": 4282.691422074708,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0xfc40caa3c8d5ef2546d5c9a2a9ae26f00dd88cf2",
+        "reserve0": 0.0,
+        "reserve1": 0.0,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0x9b62ec1453cea5dde760aaf662048ca6eeb66e7f",
+            "symbol": "eCell",
+            "name": "Ethereum Cell Network",
+            "decimals": 2,
+            "priceUSD": "0.03041471138372946744828085453517786"
+        },
+        "token1": {
+            "id": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+            "symbol": "WETH",
+            "name": "Wrapped Ether",
+            "decimals": 18,
+            "priceUSD": "2694.406979728496827338972109373494"
+        },
+        "token0Price": 88588.93795618544,
+        "token1Price": 1.1288091076276169e-05,
+        "reserveUSD": 0.0,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0xff75d96fe15d3666b16bf129719bd0042820a5f6",
+        "reserve0": 100001.01550270837,
+        "reserve1": 6.2934435110145e-05,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xa1f7c9c6d19e2d0bf20729cb0bf03338a90bed9b",
+            "symbol": "XUSDP",
+            "name": "XUSD Prime Coin",
+            "decimals": 18,
+            "priceUSD": "433.8265897955495266942691479090674"
+        },
+        "token1": {
+            "id": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+            "symbol": "WETH",
+            "name": "Wrapped Ether",
+            "decimals": 18,
+            "priceUSD": "2694.406979728496827338972109373494"
+        },
+        "token0Price": 6.210792614160179,
+        "token1Price": 0.16101004527506985,
+        "reserveUSD": 43383099.70120283,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    },
+    {
+        "id": "0xf413c93a4cebbe353c03d9c4ce75d2e2bd9c8c72",
+        "reserve0": 0.0,
+        "reserve1": 0.0,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+            "symbol": "WETH",
+            "name": "Wrapped Ether",
+            "decimals": 18,
+            "priceUSD": "2694.406979728496827338972109373494"
+        },
+        "token1": {
+            "id": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+            "symbol": "WBTC",
+            "name": "Wrapped BTC",
+            "decimals": 8,
+            "priceUSD": "267.3447873323777710880164243104167"
+        },
+        "token0Price": 0.09922212544124158,
+        "token1Price": 10.078397288437353,
+        "reserveUSD": 0.0,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DPP"
+    },
+    {
+        "id": "0xf571061074115f3587e27d7f7fed205da5f98147",
+        "reserve0": 4.031591,
+        "reserve1": 4405.903080186865,
+        "volume_24h": 0.0,
+        "volume_1h": null,
+        "token0": {
+            "id": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "symbol": "USDT",
+            "name": "Tether USD",
+            "decimals": 6,
+            "priceUSD": "0.9989023102791238964599364856505866"
+        },
+        "token1": {
+            "id": "0xd69690ba7acfc62e5204caf1e1db5e7ddc83e45f",
+            "symbol": "BAP",
+            "name": "Bitcoin ATM Pros ",
+            "decimals": 18,
+            "priceUSD": "0.05516572523073939470936976672616521"
+        },
+        "token0Price": 0.055226346623749825,
+        "token1Price": 18.10729952522253,
+        "reserveUSD": 247.08200427885745,
+        "protocol": "DODO",
+        "dangerous": false,
+        "type": "DVM"
+    }
+]
