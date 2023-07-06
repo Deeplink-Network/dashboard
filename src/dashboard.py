@@ -71,7 +71,6 @@ MAX_LIQUIDITY_THRESHOLD = 2_000_000_000
 # Initialize empty dictionary for storing token liquidity
 token_liquidity = {}
 
-
 async def refresh_pools(protocol: str):
     global pools
     global pool_dict

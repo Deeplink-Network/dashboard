@@ -67,11 +67,13 @@ def uniswap_v2_query(X: int = 1000, skip: int = 0, max_metric: float = None, is_
             token0 {{
                 id
                 symbol
+                name
                 decimals
             }}
             token1 {{
                 id
                 symbol
+                name
                 decimals
             }}
             }}
@@ -91,11 +93,13 @@ def uniswap_v2_query(X: int = 1000, skip: int = 0, max_metric: float = None, is_
             token0 {{
                 id
                 symbol
+                name
                 decimals
             }}
             token1 {{
                 id
                 symbol
+                name
                 decimals
             }}
             }}
@@ -763,11 +767,13 @@ def reformat_balancer_v1_pool(pool, token_prices):
             'token0': {
                 'id': token0['address'],
                 'symbol': token0['symbol'],
+                'name': token0['name'],
                 'denormWeight': token0['denormWeight'],
             },
             'token1': {
                 'id': token1['address'],
                 'symbol': token1['symbol'],
+                'name': token1['name'],
                 'denormWeight': token1['denormWeight']
             },
             'protocol': 'Balancer_V1',
@@ -841,6 +847,7 @@ def balancer_v2_query(X: int, skip: int, max_metric: float = None, is_hourly: bo
           address
           balance
           symbol
+          name
           weight
           token {{
             totalBalanceUSD
@@ -871,6 +878,7 @@ def reformat_balancer_v2_pools(pool_list):
                 'token0': {
                     'id': token0['address'],
                     'symbol': token0['symbol'],
+                    'name': token0['name'],
                     'weight': token0['weight'],
                     'totalBalanceUSD': token0['token']['totalBalanceUSD'],
                     'priceUSD': token0['token']['latestUSDPrice'],
@@ -878,6 +886,7 @@ def reformat_balancer_v2_pools(pool_list):
                 'token1': {
                     'id': token1['address'],
                     'symbol': token1['symbol'],
+                    'name': token1['name'],
                     'weight': token1['weight'],
                     'totalBalanceUSD': token1['token']['totalBalanceUSD'],
                     'priceUSD': token1['token']['latestUSDPrice'],
@@ -1028,6 +1037,18 @@ async def get_latest_pool_data(protocol: str, X: int = 1000, skip: int = 0, max_
                               pool['volume_24h'] = float(pool['daySnapshots'][0]['volumeUSD'])
                           else:
                               pool['volume_24h'] = 0
+                              
+                    elif protocol == PANCAKESWAP_V3:
+                      for pool in pools:
+                            pool['protocol'] = protocol
+                            pool['reserve0'] = pool.pop('totalValueLockedToken0')
+                            pool['reserve1'] = pool.pop('totalValueLockedToken1')
+                            try:
+                                pool['token0']['priceUSD'] = float(pool['totalValueLockedUSD']) / float(pool['reserve0'])
+                                pool['token1']['priceUSD'] = float(pool['totalValueLockedUSD']) / float(pool['reserve1'])
+                            except:
+                                pool['token0']['priceUSD'] = 0
+                                pool['token1']['priceUSD'] = 0
 
                     elif protocol == UNISWAP_V3:
                         for pool in pools:
