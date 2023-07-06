@@ -1,0 +1,2368 @@
+[
+    {
+        "id": "0xbebc44782c7db0a1a60cb6fe97d0b483032ff1c7",
+        "reserve0": 139393762.97821254,
+        "reserve1": 142042567.868742,
+        "volume_24h": 2.8102968845726132e+25,
+        "volume_1h": 1.037207512141828e+23,
+        "token0": {
+            "id": "0x6b175474e89094c44da98b954eedeac495271d0f",
+            "symbol": "DAI",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.001
+        },
+        "token1": {
+            "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1
+        },
+        "token0Price": 0.9990009990009991,
+        "token1Price": 1.001,
+        "reserveUSD": 281575724.6099327,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0xbebc44782c7db0a1a60cb6fe97d0b483032ff1c7",
+        "reserve0": 139393762.97821254,
+        "reserve1": 83411774.999497,
+        "volume_24h": 2.810296884571431e+25,
+        "volume_1h": 1.0372075121413917e+23,
+        "token0": {
+            "id": "0x6b175474e89094c44da98b954eedeac495271d0f",
+            "symbol": "DAI",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.001
+        },
+        "token1": {
+            "id": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "symbol": "USDT",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1.001
+        },
+        "token0Price": 1.0,
+        "token1Price": 1.0,
+        "reserveUSD": 223028343.51568723,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0xbebc44782c7db0a1a60cb6fe97d0b483032ff1c7",
+        "reserve0": 142042567.868742,
+        "reserve1": 83411774.999497,
+        "volume_24h": 45453514119879.52,
+        "volume_1h": 167757102664.80762,
+        "token0": {
+            "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1
+        },
+        "token1": {
+            "id": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "symbol": "USDT",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1.001
+        },
+        "token0Price": 1.001,
+        "token1Price": 0.9990009990009991,
+        "reserveUSD": 225537754.64323848,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0xdebf20617708857ebe4f679508e7b7863a8a8eee",
+        "reserve0": 8046574.447758435,
+        "reserve1": 8219381.358846,
+        "volume_24h": 4.124981921364855e+22,
+        "volume_1h": 4.124981921364855e+22,
+        "token0": {
+            "id": "0x028171bca77440897b824ca71d1c56cac55b68a3",
+            "symbol": "aDAI",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.004
+        },
+        "token1": {
+            "id": "0xbcca60bb61934080951369a648fb03df4f96263c",
+            "symbol": "aUSDC",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1.003
+        },
+        "token0Price": 0.9990039840637449,
+        "token1Price": 1.0009970089730809,
+        "reserveUSD": 16322800.248472007,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0xdebf20617708857ebe4f679508e7b7863a8a8eee",
+        "reserve0": 8046574.447758435,
+        "reserve1": 5479103.170552,
+        "volume_24h": 4.12498192136345e+22,
+        "volume_1h": 4.12498192136345e+22,
+        "token0": {
+            "id": "0x028171bca77440897b824ca71d1c56cac55b68a3",
+            "symbol": "aDAI",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.004
+        },
+        "token1": {
+            "id": "0x3ed3b47dd13ec9a98b44e6204a523e766b225811",
+            "symbol": "aUSDT",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1.002
+        },
+        "token0Price": 0.99800796812749,
+        "token1Price": 1.001996007984032,
+        "reserveUSD": 13568822.122442573,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0xdebf20617708857ebe4f679508e7b7863a8a8eee",
+        "reserve0": 8219381.358846,
+        "reserve1": 5479103.170552,
+        "volume_24h": 70223672695.33717,
+        "volume_1h": 70223672695.33717,
+        "token0": {
+            "id": "0xbcca60bb61934080951369a648fb03df4f96263c",
+            "symbol": "aUSDC",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1.003
+        },
+        "token1": {
+            "id": "0x3ed3b47dd13ec9a98b44e6204a523e766b225811",
+            "symbol": "aUSDT",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1.002
+        },
+        "token0Price": 0.9990029910269194,
+        "token1Price": 1.0009980039920159,
+        "reserveUSD": 13734100.879815642,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0xa96a65c051bf88b4095ee1f2451c2a9d43f53ae2",
+        "reserve0": 824.1512924637768,
+        "reserve1": 765.9452388210327,
+        "volume_24h": 7.53371888882287e+18,
+        "volume_1h": 5.702194335561135e+18,
+        "token0": {
+            "id": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+            "symbol": "ETH",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1743.64
+        },
+        "token1": {
+            "id": "0xe95a203b1a91a908f9b9ce46459d101078c2c3cb",
+            "symbol": "ankrETH",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1941.2724084230092
+        },
+        "token0Price": 1.1133447319532754,
+        "token1Price": 0.8981943968473979,
+        "reserveUSD": 2923931.5180777833,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x79a8c46dea5ada233abaffd40f3a0a2b1e5a4f27",
+        "reserve0": 40776.012986817856,
+        "reserve1": 39845.591174,
+        "volume_24h": 3792789992841.622,
+        "volume_1h": 26197909520.69062,
+        "token0": {
+            "id": "0xc2cb1040220768554cf699b0d863a3cd4324ce32",
+            "symbol": "yDAI",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.001
+        },
+        "token1": {
+            "id": "0x26ea744e5b887e5205727f55dfbe8685e3b21951",
+            "symbol": "yUSDC",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1
+        },
+        "token0Price": 0.9990009990009991,
+        "token1Price": 1.001,
+        "reserveUSD": 80662.38017380467,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x79a8c46dea5ada233abaffd40f3a0a2b1e5a4f27",
+        "reserve0": 40776.012986817856,
+        "reserve1": 88216257638951.28,
+        "volume_24h": 3800995447826.533,
+        "volume_1h": 26254586997.607754,
+        "token0": {
+            "id": "0xc2cb1040220768554cf699b0d863a3cd4324ce32",
+            "symbol": "yDAI",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.001
+        },
+        "token1": {
+            "id": "0xe6354ed5bc4b393a5aad09f21c46e101e692d447",
+            "symbol": "yUSDT",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 2.6466244604799997e-10
+        },
+        "token0Price": 2.64398048e-10,
+        "token1Price": 3782176183.0858903,
+        "reserveUSD": 64164.31952773008,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x79a8c46dea5ada233abaffd40f3a0a2b1e5a4f27",
+        "reserve0": 40776.012986817856,
+        "reserve1": 55314.5124458763,
+        "volume_24h": 8937881773421.059,
+        "volume_1h": 61736562912.433426,
+        "token0": {
+            "id": "0xc2cb1040220768554cf699b0d863a3cd4324ce32",
+            "symbol": "yDAI",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.001
+        },
+        "token1": {
+            "id": "0x04bc0ab673d88ae9dbc9da2380cb6b79c4bca9ae",
+            "symbol": "yBUSD",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1
+        },
+        "token0Price": 0.9990009990009991,
+        "token1Price": 1.001,
+        "reserveUSD": 96131.30144568096,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x79a8c46dea5ada233abaffd40f3a0a2b1e5a4f27",
+        "reserve0": 39845.591174,
+        "reserve1": 88216257638951.28,
+        "volume_24h": 8205454992.323972,
+        "volume_1h": 56677476.96833239,
+        "token0": {
+            "id": "0x26ea744e5b887e5205727f55dfbe8685e3b21951",
+            "symbol": "yUSDC",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1
+        },
+        "token1": {
+            "id": "0xe6354ed5bc4b393a5aad09f21c46e101e692d447",
+            "symbol": "yUSDT",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 2.6466244604799997e-10
+        },
+        "token0Price": 2.6466244604799997e-10,
+        "token1Price": 3778397785.30059,
+        "reserveUSD": 63193.12170192541,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x79a8c46dea5ada233abaffd40f3a0a2b1e5a4f27",
+        "reserve0": 39845.591174,
+        "reserve1": 55314.5124458763,
+        "volume_24h": 5145091780586.848,
+        "volume_1h": 35538653391.794,
+        "token0": {
+            "id": "0x26ea744e5b887e5205727f55dfbe8685e3b21951",
+            "symbol": "yUSDC",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1
+        },
+        "token1": {
+            "id": "0x04bc0ab673d88ae9dbc9da2380cb6b79c4bca9ae",
+            "symbol": "yBUSD",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1
+        },
+        "token0Price": 1.0,
+        "token1Price": 1.0,
+        "reserveUSD": 95160.1036198763,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x79a8c46dea5ada233abaffd40f3a0a2b1e5a4f27",
+        "reserve0": 88216257638951.28,
+        "reserve1": 55314.5124458763,
+        "volume_24h": 5153297235571.76,
+        "volume_1h": 35595330868.711136,
+        "token0": {
+            "id": "0xe6354ed5bc4b393a5aad09f21c46e101e692d447",
+            "symbol": "yUSDT",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 2.6466244604799997e-10
+        },
+        "token1": {
+            "id": "0x04bc0ab673d88ae9dbc9da2380cb6b79c4bca9ae",
+            "symbol": "yBUSD",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1
+        },
+        "token0Price": 3778397785.30059,
+        "token1Price": 2.6466244604799997e-10,
+        "reserveUSD": 78662.04297380171,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0xa2b47e3d5c44877cca798226b7b8118f9bfb7a56",
+        "reserve0": 73913944.75994638,
+        "reserve1": 230682435.74644327,
+        "volume_24h": 186654046134.11465,
+        "volume_1h": 186654046134.11465,
+        "token0": {
+            "id": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+            "symbol": "cDAI",
+            "name": null,
+            "decimals": 8,
+            "priceUSD": 0.02227843
+        },
+        "token1": {
+            "id": "0x39aa39c021dfbae8fac545936693ac917d5e7563",
+            "symbol": "cUSDC",
+            "name": null,
+            "decimals": 8,
+            "priceUSD": 0.022875408602671798
+        },
+        "token0Price": 1.02679626,
+        "token1Price": 0.9739030409012203,
+        "reserveUSD": 6923641.619517805,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x0ce6a5ff5217e38315f87032cf90686c96627caa",
+        "reserve0": 2054311.78,
+        "reserve1": 1375114.594909175,
+        "volume_24h": 8.467477377835411e+19,
+        "volume_1h": 8.467477377835411e+19,
+        "token0": {
+            "id": "0xdb25f211ab05b1c97d595516f45794528a807ad8",
+            "symbol": "EURS",
+            "name": null,
+            "decimals": 2,
+            "priceUSD": 1.07
+        },
+        "token1": {
+            "id": "0xd71ecff9342a5ced620049e616c5035f1db98620",
+            "symbol": "sEUR",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.07
+        },
+        "token0Price": 1.0,
+        "token1Price": 1.0,
+        "reserveUSD": 3669486.221152818,
+        "protocol": "Curve",
+        "dangerous": true
+    },
+    {
+        "id": "0x4ca9b3063ec5866a4b82e437059d2c43d1be596f",
+        "reserve0": 145.58791431861084,
+        "reserve1": 77.49289204,
+        "volume_24h": 1.3292388638646786e+19,
+        "volume_1h": 1.3292388638646786e+19,
+        "token0": {
+            "id": "0x0316eb71485b0ab14103307bf65a021042c6d380",
+            "symbol": "HBTC",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 25625.3351235
+        },
+        "token1": {
+            "id": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+            "symbol": "WBTC",
+            "name": null,
+            "decimals": 8,
+            "priceUSD": 25655
+        },
+        "token0Price": 1.0011576385774872,
+        "token1Price": 0.9988437,
+        "reserveUSD": 5718819.239632007,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x2dded6da1bf5dbdf597c45fcfaa3194e53ecfeaf",
+        "reserve0": 258746940.30380204,
+        "reserve1": 225356309.0279901,
+        "volume_24h": 18574031533237.36,
+        "volume_1h": 18574031533237.36,
+        "token0": {
+            "id": "0x8e595470ed749b85c6f7669de83eae304c2ec68f",
+            "symbol": "iDAI",
+            "name": null,
+            "decimals": 8,
+            "priceUSD": 0.010937017136498842
+        },
+        "token1": {
+            "id": "0x76eb2fe28b36b3ee97f3adae0c69606eedb2a37c",
+            "symbol": "iUSDC",
+            "name": null,
+            "decimals": 8,
+            "priceUSD": 0.0108879486020868
+        },
+        "token0Price": 0.9955135359303506,
+        "token1Price": 1.0045066831416376,
+        "reserveUSD": 5283587.629972072,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x2dded6da1bf5dbdf597c45fcfaa3194e53ecfeaf",
+        "reserve0": 258746940.30380204,
+        "reserve1": 79071651.46656054,
+        "volume_24h": 12961394464336.81,
+        "volume_1h": 12961394464336.81,
+        "token0": {
+            "id": "0x8e595470ed749b85c6f7669de83eae304c2ec68f",
+            "symbol": "iDAI",
+            "name": null,
+            "decimals": 8,
+            "priceUSD": 0.010937017136498842
+        },
+        "token1": {
+            "id": "0x48759f220ed983db51fa7a8c0d2aab8f3ce4166a",
+            "symbol": "iUSDT",
+            "name": null,
+            "decimals": 8,
+            "priceUSD": 0.011614054537828041
+        },
+        "token0Price": 1.0619032952842142,
+        "token1Price": 0.9417053364848575,
+        "reserveUSD": 3748262.1926480904,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x2dded6da1bf5dbdf597c45fcfaa3194e53ecfeaf",
+        "reserve0": 225356309.0279901,
+        "reserve1": 79071651.46656054,
+        "volume_24h": 11680265616125.828,
+        "volume_1h": 11680265616125.828,
+        "token0": {
+            "id": "0x76eb2fe28b36b3ee97f3adae0c69606eedb2a37c",
+            "symbol": "iUSDC",
+            "name": null,
+            "decimals": 8,
+            "priceUSD": 0.0108879486020868
+        },
+        "token1": {
+            "id": "0x48759f220ed983db51fa7a8c0d2aab8f3ce4166a",
+            "symbol": "iUSDT",
+            "name": null,
+            "decimals": 8,
+            "priceUSD": 0.011614054537828041
+        },
+        "token0Price": 1.066688956963121,
+        "token1Price": 0.9374804093285212,
+        "reserveUSD": 3372010.382381511,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0xf178c0b5bb7e7abf4e12a4838c7b7c5ba2c623c0",
+        "reserve0": 250706.08643798245,
+        "reserve1": 15114.782222743843,
+        "volume_24h": 5.607137001006979e+21,
+        "volume_1h": 5.607137001006979e+21,
+        "token0": {
+            "id": "0x514910771af9ca656af840dff83e8264ecf986ca",
+            "symbol": "LINK",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 5.01
+        },
+        "token1": {
+            "id": "0xbbc455cb4f1b9e4bfc4b73970d360c8f032efee6",
+            "symbol": "sLINK",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 6.797148738447068
+        },
+        "token0Price": 1.3567163150592951,
+        "token1Price": 0.7370737632474739,
+        "reserveUSD": 1358774.9159715173,
+        "protocol": "Curve",
+        "dangerous": true
+    },
+    {
+        "id": "0x06364f10b501e868329afbc005b3492902d6c763",
+        "reserve0": 4333.6713023806815,
+        "reserve1": 4462.088715,
+        "volume_24h": 39957267071991.8,
+        "volume_1h": 39957267071991.8,
+        "token0": {
+            "id": "0x99d1fa417f94dcd62bfe781a1213c092a47041bc",
+            "symbol": "ycDAI",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.0208825179233345
+        },
+        "token1": {
+            "id": "0x9777d7e2b60bb01759d0e2f8be2095df444cb07e",
+            "symbol": "ycUSDC",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1.035454620064072
+        },
+        "token0Price": 1.0142740245668815,
+        "token1Price": 0.9859268558386115,
+        "reserveUSD": 9044.459646108993,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x06364f10b501e868329afbc005b3492902d6c763",
+        "reserve0": 4333.6713023806815,
+        "reserve1": 107777996120.37276,
+        "volume_24h": 39958260805410.11,
+        "volume_1h": 39958260805410.11,
+        "token0": {
+            "id": "0x99d1fa417f94dcd62bfe781a1213c092a47041bc",
+            "symbol": "ycDAI",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.0208825179233345
+        },
+        "token1": {
+            "id": "0x1be5d71f2da660bfdee8012ddc58d024448a0a59",
+            "symbol": "ycUSDT",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 4.8945783939605344e-08
+        },
+        "token0Price": 4.794458038048315e-08,
+        "token1Price": 20857414.791496873,
+        "reserveUSD": 9699.447782577874,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x06364f10b501e868329afbc005b3492902d6c763",
+        "reserve0": 4333.6713023806815,
+        "reserve1": 5882.4816349400235,
+        "volume_24h": 94194857634949.98,
+        "volume_1h": 94194857634949.98,
+        "token0": {
+            "id": "0x99d1fa417f94dcd62bfe781a1213c092a47041bc",
+            "symbol": "ycDAI",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.0208825179233345
+        },
+        "token1": {
+            "id": "0x8e870d67f660d95d5be530380d0ec0bd388289e1",
+            "symbol": "USDP",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 0.999805
+        },
+        "token0Price": 0.9793536302627553,
+        "token1Price": 1.0210816288409585,
+        "reserveUSD": 10305.503822047696,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x06364f10b501e868329afbc005b3492902d6c763",
+        "reserve0": 4462.088715,
+        "reserve1": 107777996120.37276,
+        "volume_24h": 993733500.5976349,
+        "volume_1h": 993733500.5976349,
+        "token0": {
+            "id": "0x9777d7e2b60bb01759d0e2f8be2095df444cb07e",
+            "symbol": "ycUSDC",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1.035454620064072
+        },
+        "token1": {
+            "id": "0x1be5d71f2da660bfdee8012ddc58d024448a0a59",
+            "symbol": "ycUSDT",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 4.8945783939605344e-08
+        },
+        "token0Price": 4.7269849389031334e-08,
+        "token1Price": 21155134.042632334,
+        "reserveUSD": 9895.568886633897,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x06364f10b501e868329afbc005b3492902d6c763",
+        "reserve0": 4462.088715,
+        "reserve1": 5882.4816349400235,
+        "volume_24h": 54237590563040.47,
+        "volume_1h": 54237590563040.47,
+        "token0": {
+            "id": "0x9777d7e2b60bb01759d0e2f8be2095df444cb07e",
+            "symbol": "ycUSDC",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1.035454620064072
+        },
+        "token1": {
+            "id": "0x8e870d67f660d95d5be530380d0ec0bd388289e1",
+            "symbol": "USDP",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 0.999805
+        },
+        "token0Price": 0.9655710454390884,
+        "token1Price": 1.0356565730958256,
+        "reserveUSD": 10501.62492610372,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x06364f10b501e868329afbc005b3492902d6c763",
+        "reserve0": 107777996120.37276,
+        "reserve1": 5882.4816349400235,
+        "volume_24h": 54238584296458.78,
+        "volume_1h": 54238584296458.78,
+        "token0": {
+            "id": "0x1be5d71f2da660bfdee8012ddc58d024448a0a59",
+            "symbol": "ycUSDT",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 4.8945783939605344e-08
+        },
+        "token1": {
+            "id": "0x8e870d67f660d95d5be530380d0ec0bd388289e1",
+            "symbol": "USDP",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 0.999805
+        },
+        "token0Price": 20426784.89394855,
+        "token1Price": 4.8955330229e-08,
+        "reserveUSD": 11156.613062572598,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x93054188d876f558f4a66b2ef1d97d16edf0895b",
+        "reserve0": 10.82068632,
+        "reserve1": 191.20072541,
+        "volume_24h": 4290081.603392237,
+        "volume_1h": 4290081.603392237,
+        "token0": {
+            "id": "0xeb4c2781e4eba804ce9a9803c67d0893436bb27d",
+            "symbol": "renBTC",
+            "name": null,
+            "decimals": 8,
+            "priceUSD": 26655.594770699998
+        },
+        "token1": {
+            "id": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+            "symbol": "WBTC",
+            "name": null,
+            "decimals": 8,
+            "priceUSD": 25655
+        },
+        "token0Price": 0.96246211051348,
+        "token1Price": 1.03900194,
+        "reserveUSD": 5193686.440080326,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0xeb16ae0052ed37f479f7fe63849198df1765a733",
+        "reserve0": 871291.236724879,
+        "reserve1": 813435.2712978799,
+        "volume_24h": 1.9965552074986713e+21,
+        "volume_1h": 1.9965552074986713e+21,
+        "token0": {
+            "id": "0x028171bca77440897b824ca71d1c56cac55b68a3",
+            "symbol": "aDAI",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.004
+        },
+        "token1": {
+            "id": "0x6c5024cd4f8a59110119c56f8933403a539555eb",
+            "symbol": "aSUSD",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.0042824449200238
+        },
+        "token0Price": 1.000281319641458,
+        "token1Price": 0.999718759477025,
+        "reserveUSD": 1691695.1647149962,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x7fc77b5c7614e1533320ea6ddc2eb61fa00a9714",
+        "reserve0": 22.44675256,
+        "reserve1": 98.93536133,
+        "volume_24h": 13071292.765044695,
+        "volume_1h": 5421705.699851243,
+        "token0": {
+            "id": "0xeb4c2781e4eba804ce9a9803c67d0893436bb27d",
+            "symbol": "renBTC",
+            "name": null,
+            "decimals": 8,
+            "priceUSD": 26655.594770699998
+        },
+        "token1": {
+            "id": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+            "symbol": "WBTC",
+            "name": null,
+            "decimals": 8,
+            "priceUSD": 25655
+        },
+        "token0Price": 0.96246211051348,
+        "token1Price": 1.03900194,
+        "reserveUSD": 3136518.235078683,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x7fc77b5c7614e1533320ea6ddc2eb61fa00a9714",
+        "reserve0": 22.44675256,
+        "reserve1": 94.33486838040625,
+        "volume_24h": 1.0158652235197027e+17,
+        "volume_1h": 4.2136018002490184e+16,
+        "token0": {
+            "id": "0xeb4c2781e4eba804ce9a9803c67d0893436bb27d",
+            "symbol": "renBTC",
+            "name": null,
+            "decimals": 8,
+            "priceUSD": 26655.594770699998
+        },
+        "token1": {
+            "id": "0xfe18be6b3bd88a2d2a7f928d00292e7a9963cfc6",
+            "symbol": "sBTC",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 25513.9260506568
+        },
+        "token0Price": 0.9571696399999999,
+        "token1Price": 1.044746885202084,
+        "reserveUSD": 3005184.3960136604,
+        "protocol": "Curve",
+        "dangerous": true
+    },
+    {
+        "id": "0x7fc77b5c7614e1533320ea6ddc2eb61fa00a9714",
+        "reserve0": 98.93536133,
+        "reserve1": 94.33486838040625,
+        "volume_24h": 1.015865223602071e+17,
+        "volume_1h": 4.213601800590666e+16,
+        "token0": {
+            "id": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+            "symbol": "WBTC",
+            "name": null,
+            "decimals": 8,
+            "priceUSD": 25655
+        },
+        "token1": {
+            "id": "0xfe18be6b3bd88a2d2a7f928d00292e7a9963cfc6",
+            "symbol": "sBTC",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 25513.9260506568
+        },
+        "token0Price": 0.9945011128691015,
+        "token1Price": 1.005529292083982,
+        "reserveUSD": 4945039.550777278,
+        "protocol": "Curve",
+        "dangerous": true
+    },
+    {
+        "id": "0xc5424b857f758e906013f3555dad202e4bdb4567",
+        "reserve0": 10594.054909636016,
+        "reserve1": 9463.849249727107,
+        "volume_24h": 4.915285630839765e+20,
+        "volume_1h": 1.1953382483715172e+18,
+        "token0": {
+            "id": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+            "symbol": "ETH",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1743.64
+        },
+        "token1": {
+            "id": "0x5e74c9036fb86bd7ecdcb084a0673efc32ea31cb",
+            "symbol": "sETH",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1744.0600279053897
+        },
+        "token0Price": 1.000240891414162,
+        "token1Price": 0.9997591666005361,
+        "reserveUSD": 34977739.0892092,
+        "protocol": "Curve",
+        "dangerous": true
+    },
+    {
+        "id": "0xdc24316b9ae028f1497c275eb9192a3ea0f67022",
+        "reserve0": 285300.6317829905,
+        "reserve1": 292572.76874687755,
+        "volume_24h": 3.3969825312633155e+22,
+        "volume_1h": 8.013986214552964e+18,
+        "token0": {
+            "id": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+            "symbol": "ETH",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1743.64
+        },
+        "token1": {
+            "id": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+            "symbol": "stETH",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1741.5274215851896
+        },
+        "token0Price": 0.9987884090667738,
+        "token1Price": 1.0012130606665313,
+        "reserveUSD": 1006985093.1838832,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0xa5407eae9ba41422680e2e00537571bcc53efbfd",
+        "reserve0": 12530452.487521334,
+        "reserve1": 12642998.075926,
+        "volume_24h": 1.0572962368590363e+24,
+        "volume_1h": 3.4942353164912296e+21,
+        "token0": {
+            "id": "0x6b175474e89094c44da98b954eedeac495271d0f",
+            "symbol": "DAI",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.001
+        },
+        "token1": {
+            "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1
+        },
+        "token0Price": 0.9990009990009991,
+        "token1Price": 1.001,
+        "reserveUSD": 25185981.015934855,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0xa5407eae9ba41422680e2e00537571bcc53efbfd",
+        "reserve0": 12530452.487521334,
+        "reserve1": 11929481.483071,
+        "volume_24h": 1.0572962368589759e+24,
+        "volume_1h": 3.4942353164910304e+21,
+        "token0": {
+            "id": "0x6b175474e89094c44da98b954eedeac495271d0f",
+            "symbol": "DAI",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.001
+        },
+        "token1": {
+            "id": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "symbol": "USDT",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1.001
+        },
+        "token0Price": 1.0,
+        "token1Price": 1.0,
+        "reserveUSD": 24484393.904562924,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0xa5407eae9ba41422680e2e00537571bcc53efbfd",
+        "reserve0": 12530452.487521334,
+        "reserve1": 13111641.955633098,
+        "volume_24h": 2.1636321582882245e+24,
+        "volume_1h": 7.150540818953868e+21,
+        "token0": {
+            "id": "0x6b175474e89094c44da98b954eedeac495271d0f",
+            "symbol": "DAI",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.001
+        },
+        "token1": {
+            "id": "0x57ab1ec28d129707052df4df418d58a2d46d5f51",
+            "symbol": "sUSD",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.0006264792817707
+        },
+        "token0Price": 0.9996268524293415,
+        "token1Price": 1.000373286861744,
+        "reserveUSD": 25662839.067677155,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0xa5407eae9ba41422680e2e00537571bcc53efbfd",
+        "reserve0": 12642998.075926,
+        "reserve1": 11929481.483071,
+        "volume_24h": 2073380047038.9973,
+        "volume_1h": 6852268581.220566,
+        "token0": {
+            "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1
+        },
+        "token1": {
+            "id": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "symbol": "USDT",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1.001
+        },
+        "token0Price": 1.001,
+        "token1Price": 0.9990009990009991,
+        "reserveUSD": 24584409.04048007,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0xa5407eae9ba41422680e2e00537571bcc53efbfd",
+        "reserve0": 12642998.075926,
+        "reserve1": 13111641.955633098,
+        "volume_24h": 1.1063359214313217e+24,
+        "volume_1h": 3.6563055024696894e+21,
+        "token0": {
+            "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1
+        },
+        "token1": {
+            "id": "0x57ab1ec28d129707052df4df418d58a2d46d5f51",
+            "symbol": "sUSD",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.0006264792817707
+        },
+        "token0Price": 1.0006264792817707,
+        "token1Price": 0.9993739129487954,
+        "reserveUSD": 25762854.203594297,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0xa5407eae9ba41422680e2e00537571bcc53efbfd",
+        "reserve0": 11929481.483071,
+        "reserve1": 13111641.955633098,
+        "volume_24h": 1.1063359214312613e+24,
+        "volume_1h": 3.65630550246949e+21,
+        "token0": {
+            "id": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "symbol": "USDT",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1.001
+        },
+        "token1": {
+            "id": "0x57ab1ec28d129707052df4df418d58a2d46d5f51",
+            "symbol": "sUSD",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.0006264792817707
+        },
+        "token0Price": 0.9996268524293415,
+        "token1Price": 1.000373286861744,
+        "reserveUSD": 25061267.09222237,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x52ea46506b9cc5ef470c5bf89f17dc28bb35d85c",
+        "reserve0": 5409723.29741514,
+        "reserve1": 5782045.77712311,
+        "volume_24h": 989671356166.4822,
+        "volume_1h": 989671356166.4822,
+        "token0": {
+            "id": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+            "symbol": "cDAI",
+            "name": null,
+            "decimals": 8,
+            "priceUSD": 0.02227843
+        },
+        "token1": {
+            "id": "0x39aa39c021dfbae8fac545936693ac917d5e7563",
+            "symbol": "cUSDC",
+            "name": null,
+            "decimals": 8,
+            "priceUSD": 0.022875408602671798
+        },
+        "token0Price": 1.02679626,
+        "token1Price": 0.9739030409012203,
+        "reserveUSD": 252786.80151187652,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x52ea46506b9cc5ef470c5bf89f17dc28bb35d85c",
+        "reserve0": 5409723.29741514,
+        "reserve1": 82324.1085,
+        "volume_24h": 478446516783.60535,
+        "volume_1h": 478446516783.60535,
+        "token0": {
+            "id": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
+            "symbol": "cDAI",
+            "name": null,
+            "decimals": 8,
+            "priceUSD": 0.02227843
+        },
+        "token1": {
+            "id": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "symbol": "USDT",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1.001
+        },
+        "token0Price": 44.93135288258643,
+        "token1Price": 0.022256173826173828,
+        "reserveUSD": 202926.57440933236,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x52ea46506b9cc5ef470c5bf89f17dc28bb35d85c",
+        "reserve0": 5782045.77712311,
+        "reserve1": 82324.1085,
+        "volume_24h": 511370435332.11743,
+        "volume_1h": 511370435332.11743,
+        "token0": {
+            "id": "0x39aa39c021dfbae8fac545936693ac917d5e7563",
+            "symbol": "cUSDC",
+            "name": null,
+            "decimals": 8,
+            "priceUSD": 0.022875408602671798
+        },
+        "token1": {
+            "id": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "symbol": "USDT",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1.001
+        },
+        "token0Price": 43.75878120415673,
+        "token1Price": 0.022852556046625176,
+        "reserveUSD": 214673.0923195441,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x45f783cce6b7ff23b2ab2d70e416cdb7d6055f51",
+        "reserve0": 32958.64001606588,
+        "reserve1": 28949.842686,
+        "volume_24h": 330297186641.0784,
+        "volume_1h": 330297186641.0784,
+        "token0": {
+            "id": "0x16de59092dae5ccf4a1e6439d611fd0653f0bd01",
+            "symbol": "yDAI",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.001
+        },
+        "token1": {
+            "id": "0xd6ad7a6750a7593e092a9b218d66c0a814a3436e",
+            "symbol": "yUSDC",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1
+        },
+        "token0Price": 0.9990009990009991,
+        "token1Price": 1.001,
+        "reserveUSD": 61941.44134208195,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x45f783cce6b7ff23b2ab2d70e416cdb7d6055f51",
+        "reserve0": 32958.64001606588,
+        "reserve1": 3310860187694493.0,
+        "volume_24h": 363477190573.6999,
+        "volume_1h": 363477190573.6999,
+        "token0": {
+            "id": "0x16de59092dae5ccf4a1e6439d611fd0653f0bd01",
+            "symbol": "yDAI",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.001
+        },
+        "token1": {
+            "id": "0x83f798e925bcd4017eb265844fddabb448f1707d",
+            "symbol": "yUSDT",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 7.0580700189999994e-12
+        },
+        "token0Price": 7.051019e-12,
+        "token1Price": 141823472607.29263,
+        "reserveUSD": 56359.881683949156,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x45f783cce6b7ff23b2ab2d70e416cdb7d6055f51",
+        "reserve0": 32958.64001606588,
+        "reserve1": 164238.0687049685,
+        "volume_24h": 1976219834120.3076,
+        "volume_1h": 1976219834120.3076,
+        "token0": {
+            "id": "0x16de59092dae5ccf4a1e6439d611fd0653f0bd01",
+            "symbol": "yDAI",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.001
+        },
+        "token1": {
+            "id": "0x73a052500105205d34daf004eab301916da8190f",
+            "symbol": "yTUSD",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.0989991134096901
+        },
+        "token0Price": 1.0979012121974927,
+        "token1Price": 0.9108287602656531,
+        "reserveUSD": 213489.0905509621,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x45f783cce6b7ff23b2ab2d70e416cdb7d6055f51",
+        "reserve0": 28949.842686,
+        "reserve1": 3310860187694493.0,
+        "volume_24h": 33180003933.20171,
+        "volume_1h": 33180003933.20171,
+        "token0": {
+            "id": "0xd6ad7a6750a7593e092a9b218d66c0a814a3436e",
+            "symbol": "yUSDC",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1
+        },
+        "token1": {
+            "id": "0x83f798e925bcd4017eb265844fddabb448f1707d",
+            "symbol": "yUSDT",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 7.0580700189999994e-12
+        },
+        "token0Price": 7.0580700189999994e-12,
+        "token1Price": 141681790816.4762,
+        "reserveUSD": 52318.12571386721,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x45f783cce6b7ff23b2ab2d70e416cdb7d6055f51",
+        "reserve0": 28949.842686,
+        "reserve1": 164238.0687049685,
+        "volume_24h": 1645922647479.8093,
+        "volume_1h": 1645922647479.8093,
+        "token0": {
+            "id": "0xd6ad7a6750a7593e092a9b218d66c0a814a3436e",
+            "symbol": "yUSDC",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1
+        },
+        "token1": {
+            "id": "0x73a052500105205d34daf004eab301916da8190f",
+            "symbol": "yTUSD",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.0989991134096901
+        },
+        "token0Price": 1.0989991134096901,
+        "token1Price": 0.9099188414242289,
+        "reserveUSD": 209447.33458088015,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x45f783cce6b7ff23b2ab2d70e416cdb7d6055f51",
+        "reserve0": 3310860187694493.0,
+        "reserve1": 164238.0687049685,
+        "volume_24h": 1679102651412.431,
+        "volume_1h": 1679102651412.431,
+        "token0": {
+            "id": "0x83f798e925bcd4017eb265844fddabb448f1707d",
+            "symbol": "yUSDT",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 7.0580700189999994e-12
+        },
+        "token1": {
+            "id": "0x73a052500105205d34daf004eab301916da8190f",
+            "symbol": "yTUSD",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.0989991134096901
+        },
+        "token0Price": 155708162493.6045,
+        "token1Price": 6.422270894379565e-12,
+        "reserveUSD": 203865.77492274737,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x8038c01a0390a8c547446a0b2c18fc9aefecc10c",
+        "reserve0": 63281.92061953009,
+        "reserve1": 12561.844130393178,
+        "volume_24h": 8.392211500134261e+20,
+        "volume_1h": 2.1061371304249642e+20,
+        "token0": {
+            "id": "0x5bc25f649fc4e26069ddf4cf4010f9f706c23831",
+            "symbol": "DUSD",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 0.979943564095904
+        },
+        "token1": {
+            "id": "0x6c3f90f043a72fa612cbac8115ee7e52bde6e490",
+            "symbol": "3Crv",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.0265971202654944
+        },
+        "token0Price": 1.0476084112176736,
+        "token1Price": 0.9545551460756825,
+        "reserveUSD": 74908.66384422203,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x4f062658eaaf2c1ccf8c8e36d6824cdf41167956",
+        "reserve0": 6078681.85,
+        "reserve1": 5518107.117813213,
+        "volume_24h": 5.047347391010119e+22,
+        "volume_1h": 6.713641023761532e+21,
+        "token0": {
+            "id": "0x056fd409e1d7a124bd7017459dfea2f387b6d5cd",
+            "symbol": "GUSD",
+            "name": null,
+            "decimals": 2,
+            "priceUSD": 1.0001540665429514
+        },
+        "token1": {
+            "id": "0x6c3f90f043a72fa612cbac8115ee7e52bde6e490",
+            "symbol": "3Crv",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.0265971202654944
+        },
+        "token0Price": 1.0264389803602398,
+        "token1Price": 0.9742420339970324,
+        "reserveUSD": 11744491.247961901,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x3ef6a01a0f81d6046290f3e2a8c5b843e738e604",
+        "reserve0": 27391.59365335,
+        "reserve1": 156.13255960655837,
+        "volume_24h": 2.1835823777997952e+18,
+        "volume_1h": 2.1835823777997952e+18,
+        "token0": {
+            "id": "0xdf574c24545e5ffecb9a659c229253d4111d87e1",
+            "symbol": "HUSD",
+            "name": null,
+            "decimals": 8,
+            "priceUSD": 0.07034342036676136
+        },
+        "token1": {
+            "id": "0x6c3f90f043a72fa612cbac8115ee7e52bde6e490",
+            "symbol": "3Crv",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.0265971202654944
+        },
+        "token0Price": 14.594074540489384,
+        "token1Price": 0.06852096014897201,
+        "reserveUSD": 2087.103622944885,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0xe7a24ef0c5e95ffb0f6684b813a78f2a3ad7d171",
+        "reserve0": 20847.97014355158,
+        "reserve1": 13691.944647663753,
+        "volume_24h": 3.0041442865e+21,
+        "volume_1h": 3.0041442865e+21,
+        "token0": {
+            "id": "0x0e2ec54fc0b509f445631bf4b91ab8168230c752",
+            "symbol": "LINKUSD",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 0.9337748149409532
+        },
+        "token1": {
+            "id": "0x6c3f90f043a72fa612cbac8115ee7e52bde6e490",
+            "symbol": "3Crv",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.0265971202654944
+        },
+        "token0Price": 1.0994054496216101,
+        "token1Price": 0.9095825387660001,
+        "reserveUSD": 33523.42040881555,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x8474ddbe98f5aa3179b3b3f5942d724afcdec9f6",
+        "reserve0": 953651.4800391005,
+        "reserve1": 854918.7817837549,
+        "volume_24h": 2.2995088652499994e+22,
+        "volume_1h": 2.2995088652499994e+22,
+        "token0": {
+            "id": "0xe2f2a5c287993345a840db3b0845fbc70f5935a5",
+            "symbol": "mUSD",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 0.999807815628822
+        },
+        "token1": {
+            "id": "0x6c3f90f043a72fa612cbac8115ee7e52bde6e490",
+            "symbol": "3Crv",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.0265971202654944
+        },
+        "token0Price": 1.0267944541119869,
+        "token1Price": 0.9739047537657769,
+        "reserveUSD": 1831125.3625691738,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0xc18cc39da8b11da8c3541c598ee022258f9744da",
+        "reserve0": 11686.561141480453,
+        "reserve1": 9397.053340335358,
+        "volume_24h": 1.4238722393136993e+20,
+        "volume_1h": 1.4238722393136993e+20,
+        "token0": {
+            "id": "0x196f4727526ea7fb1e17b2071b3d8eaa38486988",
+            "symbol": "RSV",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 0.9992530348813917
+        },
+        "token1": {
+            "id": "0x6c3f90f043a72fa612cbac8115ee7e52bde6e490",
+            "symbol": "3Crv",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.0265971202654944
+        },
+        "token0Price": 1.0273645257303106,
+        "token1Price": 0.9733643463006879,
+        "reserveUSD": 21324.819586120808,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x3e01dd8a5e1fb3481f0f589056b428fc308af0fb",
+        "reserve0": 33815.411551171586,
+        "reserve1": 68489.3308578986,
+        "volume_24h": 1.7118283155421662e+20,
+        "volume_1h": 1.7118283155421662e+20,
+        "token0": {
+            "id": "0x1c48f86ae57291f7686349f12601910bd8d470bb",
+            "symbol": "USDK",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.0047521314691046
+        },
+        "token1": {
+            "id": "0x6c3f90f043a72fa612cbac8115ee7e52bde6e490",
+            "symbol": "3Crv",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.0265971202654944
+        },
+        "token0Price": 1.021741669524452,
+        "token1Price": 0.9787209720686335,
+        "reserveUSD": 104287.05666017401,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x0f9cb53ebe405d49a0bbdbd291a65ff571bc83e1",
+        "reserve0": 4746672.928504858,
+        "reserve1": 15807.64801068762,
+        "volume_24h": 4.836259090420864e+21,
+        "volume_1h": 4.836259090420864e+21,
+        "token0": {
+            "id": "0x674c6ad92fd080e4004b2312b45f796a192d27a0",
+            "symbol": "USDN",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 0.03445981435989902
+        },
+        "token1": {
+            "id": "0x6c3f90f043a72fa612cbac8115ee7e52bde6e490",
+            "symbol": "3Crv",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.0265971202654944
+        },
+        "token0Price": 29.791139021925446,
+        "token1Price": 0.03356702807717516,
+        "reserveUSD": 179797.55386937814,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x42d7025938bec20b69cbae5a77421082407f053a",
+        "reserve0": 2179436.5249044234,
+        "reserve1": 578887.0590686802,
+        "volume_24h": 2.018104002228092e+21,
+        "volume_1h": 2.018104002228092e+21,
+        "token0": {
+            "id": "0x1456688345527be1f37e9e627da0837d6f08c925",
+            "symbol": "USDP",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 0.9760013412105546
+        },
+        "token1": {
+            "id": "0x6c3f90f043a72fa612cbac8115ee7e52bde6e490",
+            "symbol": "3Crv",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.0265971202654944
+        },
+        "token0Price": 1.0518398663184056,
+        "token1Price": 0.9507150584624132,
+        "reserveUSD": 2721416.759188856,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x890f4e345b1daed0367a877a1612f86a1f86985f",
+        "reserve0": 417157.258524395,
+        "reserve1": 917.6422690321833,
+        "volume_24h": 6.15769946158963e+21,
+        "volume_1h": 6.15769946158963e+21,
+        "token0": {
+            "id": "0xa47c8bf37f92abed4a126bda807a7b7498661acd",
+            "symbol": "UST",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 0.01138205106183311
+        },
+        "token1": {
+            "id": "0x6c3f90f043a72fa612cbac8115ee7e52bde6e490",
+            "symbol": "3Crv",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.0265971202654944
+        },
+        "token0Price": 90.19438717051038,
+        "token1Price": 0.011087164416445597,
+        "reserveUSD": 5690.154128161314,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x071c661b4deefb59e2a3ddb20db036821eee8f4b",
+        "reserve0": 14.5813734,
+        "reserve1": 4.678039441902455,
+        "volume_24h": 2.278048892052173e+16,
+        "volume_1h": 2.278048892052173e+16,
+        "token0": {
+            "id": "0x9be89d2a4cd102d8fecc6bf9da793be995c22541",
+            "symbol": "BBTC",
+            "name": null,
+            "decimals": 8,
+            "priceUSD": 25450.644688179393
+        },
+        "token1": {
+            "id": "0x075b1bb99792c9e1041ba13afef80c91a1e70fb3",
+            "symbol": "sbtcCrv",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 26270.362208271174
+        },
+        "token0Price": 1.032208124003731,
+        "token1Price": 0.9687968702679823,
+        "reserveUSD": 493999.1440324265,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0xd81da8d904b52208541bade1bd6595d8a251f8dd",
+        "reserve0": 5.251766262163207,
+        "reserve1": 1.8141068668764975,
+        "volume_24h": 4.265161719932979e+16,
+        "volume_1h": 4.265161719932979e+16,
+        "token0": {
+            "id": "0x8064d9ae6cdf087b1bcd5bdf3531bd5d8c537a68",
+            "symbol": "oBTC",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 25284.46592110099
+        },
+        "token1": {
+            "id": "0x075b1bb99792c9e1041ba13afef80c91a1e70fb3",
+            "symbol": "sbtcCrv",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 26270.362208271174
+        },
+        "token0Price": 1.038992173702487,
+        "token1Price": 0.9624711574452606,
+        "reserveUSD": 180445.34955861108,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x7f55dde206dbad629c080068923b36fe9d6bdbef",
+        "reserve0": 9.582050287609666,
+        "reserve1": 4.708672173605731,
+        "volume_24h": 4.137297610496593e+16,
+        "volume_1h": 4.137297610496593e+16,
+        "token0": {
+            "id": "0x5228a22e72ccc52d415ecfd199f99d0665e7733b",
+            "symbol": "pBTC",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 25604.661660183963
+        },
+        "token1": {
+            "id": "0x075b1bb99792c9e1041ba13afef80c91a1e70fb3",
+            "symbol": "sbtcCrv",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 26270.362208271174
+        },
+        "token0Price": 1.0259991933079278,
+        "token1Price": 0.9746596357214437,
+        "reserveUSD": 369043.679145744,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0xc25099792e9349c7dd09759744ea681c7de2cb66",
+        "reserve0": 6.293910995355906,
+        "reserve1": 73.79307115247123,
+        "volume_24h": 7.905725409169693e+16,
+        "volume_1h": 7.905725409169693e+16,
+        "token0": {
+            "id": "0x8daebade922df735c38c80c7ebd708af50815faa",
+            "symbol": "TBTC",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 28727.907882905016
+        },
+        "token1": {
+            "id": "0x075b1bb99792c9e1041ba13afef80c91a1e70fb3",
+            "symbol": "sbtcCrv",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 26270.362208271174
+        },
+        "token0Price": 0.9144544153841344,
+        "token1Price": 1.0935482219525732,
+        "reserveUSD": 2119381.6029339335,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0xecd5e75afb02efa118af914515d6521aabd189f1",
+        "reserve0": 11707935.287211701,
+        "reserve1": 3784777.3277176847,
+        "volume_24h": 1.2267201529802374e+25,
+        "volume_1h": 1.8631023154132046e+23,
+        "token0": {
+            "id": "0x0000000000085d4780b73119b644ae5ecd22b376",
+            "symbol": "TUSD",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 0.9972511917607443
+        },
+        "token1": {
+            "id": "0x6c3f90f043a72fa612cbac8115ee7e52bde6e490",
+            "symbol": "3Crv",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.0265971202654944
+        },
+        "token0Price": 1.0294268171822758,
+        "token1Price": 0.971414367013653,
+        "reserveUSD": 15561193.92371065,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0xed279fdd11ca84beef15af5d39bb4d4bee23f0ca",
+        "reserve0": 3907201.402540691,
+        "reserve1": 18478692.89273278,
+        "volume_24h": 5.111743779291043e+23,
+        "volume_1h": 2.50760078093056e+22,
+        "token0": {
+            "id": "0x5f98805a4e8be255a32880fdec7f6728c6568ba0",
+            "symbol": "LUSD",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.0083893221261602
+        },
+        "token1": {
+            "id": "0x6c3f90f043a72fa612cbac8115ee7e52bde6e490",
+            "symbol": "3Crv",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.0265971202654944
+        },
+        "token0Price": 1.0180563178722912,
+        "token1Price": 0.9822639302410809,
+        "reserveUSD": 22910153.08366832,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0xd632f22692fac7611d2aa1c0d552930d43caed3b",
+        "reserve0": 118098100.12854081,
+        "reserve1": 55649277.50968725,
+        "volume_24h": 2.645028299088681e+24,
+        "volume_1h": 5.179862260924533e+21,
+        "token0": {
+            "id": "0x853d955acef822db058eb8505911ed77f175b99e",
+            "symbol": "FRAX",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 0.9996246779539373
+        },
+        "token1": {
+            "id": "0x6c3f90f043a72fa612cbac8115ee7e52bde6e490",
+            "symbol": "3Crv",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.0265971202654944
+        },
+        "token0Price": 1.0269825694647368,
+        "token1Price": 0.9737263608292788,
+        "reserveUSD": 175183163.34426472,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x4807862aa8b2bf68830e4c8dc86d0e9a998e085a",
+        "reserve0": 4992766.734111782,
+        "reserve1": 812931.4405366271,
+        "volume_24h": 8.727433893796787e+22,
+        "volume_1h": 3.865204276953351e+22,
+        "token0": {
+            "id": "0x4fabb145d64652a948d72533023f6e7a623c7c53",
+            "symbol": "BUSD",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 0.9990409125737867
+        },
+        "token1": {
+            "id": "0x6c3f90f043a72fa612cbac8115ee7e52bde6e490",
+            "symbol": "3Crv",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.0265971202654944
+        },
+        "token0Price": 1.0275826618758943,
+        "token1Price": 0.9731577196665219,
+        "reserveUSD": 5822531.310143261,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0xf9440930043eb3997fc70e1339dbb11f341de7a8",
+        "reserve0": 984.8163296924721,
+        "reserve1": 941.5035481845381,
+        "volume_24h": 9.72775534349949e+18,
+        "volume_1h": 9.72775534349949e+18,
+        "token0": {
+            "id": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+            "symbol": "ETH",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1743.64
+        },
+        "token1": {
+            "id": "0x9559aaa82d9649c7a7b220e7c461d2e74c9a3593",
+            "symbol": "rETH",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1833.75
+        },
+        "token0Price": 1.0516792457158588,
+        "token1Price": 0.9508602590320382,
+        "reserveUSD": 3443647.276588379,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x43b4fdfd4ff969587185cdb6f0bd875c5fc83f8c",
+        "reserve0": 11333931.300776301,
+        "reserve1": 7658287.679520397,
+        "volume_24h": 2.7068015907505276e+21,
+        "volume_1h": 1.588704087717956e+21,
+        "token0": {
+            "id": "0xbc6da0fe9ad5f3b0d58160288917aa56653660e9",
+            "symbol": "alUSD",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 0.9983007129073455
+        },
+        "token1": {
+            "id": "0x6c3f90f043a72fa612cbac8115ee7e52bde6e490",
+            "symbol": "3Crv",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.0265971202654944
+        },
+        "token0Price": 1.0283445729250673,
+        "token1Price": 0.9724366971233749,
+        "reserveUSD": 19176647.775568213,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x80466c64868e1ab14a1ddf27a676c3fcbe638fe5",
+        "reserve0": 119981.446835,
+        "reserve1": 4.54656183,
+        "volume_24h": "MISSING",
+        "volume_1h": "MISSING",
+        "token0": {
+            "id": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "symbol": "USDT",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1.001
+        },
+        "token1": {
+            "id": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+            "symbol": "WBTC",
+            "name": null,
+            "decimals": 8,
+            "priceUSD": 25655
+        },
+        "token0Price": 25629.37062937063,
+        "token1Price": 3.901773533424283e-05,
+        "reserveUSD": 236743.472030485,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x80466c64868e1ab14a1ddf27a676c3fcbe638fe5",
+        "reserve0": 119981.446835,
+        "reserve1": 66.24828022749945,
+        "volume_24h": "MISSING",
+        "volume_1h": "MISSING",
+        "token0": {
+            "id": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "symbol": "USDT",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1.001
+        },
+        "token1": {
+            "id": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+            "symbol": "WETH",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1743.39
+        },
+        "token0Price": 1741.648351648352,
+        "token1Price": 0.0005741687172692283,
+        "reserveUSD": 235598.01754765527,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x80466c64868e1ab14a1ddf27a676c3fcbe638fe5",
+        "reserve0": 4.54656183,
+        "reserve1": 66.24828022749945,
+        "volume_24h": "MISSING",
+        "volume_1h": "MISSING",
+        "token0": {
+            "id": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+            "symbol": "WBTC",
+            "name": null,
+            "decimals": 8,
+            "priceUSD": 25655
+        },
+        "token1": {
+            "id": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+            "symbol": "WETH",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1743.39
+        },
+        "token0Price": 0.06795517442993569,
+        "token1Price": 14.71558285868337,
+        "reserveUSD": 232138.63301447028,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x618788357d0ebd8a37e763adab3bc575d54c2c7d",
+        "reserve0": 115192.93226402694,
+        "reserve1": 485256.3950829483,
+        "volume_24h": 1.221207582318244e+22,
+        "volume_1h": 4.6696457314208564e+21,
+        "token0": {
+            "id": "0x03ab458634910aad20ef5f1c8ee96f1d6ac54919",
+            "symbol": "RAI",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 2.7727731637482655
+        },
+        "token1": {
+            "id": "0x6c3f90f043a72fa612cbac8115ee7e52bde6e490",
+            "symbol": "3Crv",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.0265971202654944
+        },
+        "token0Price": 0.3702420139113468,
+        "token1Price": 2.7009360429836216,
+        "reserveUSD": 817566.6890177354,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x5a6a4d54456819380173272a5e8e9b9904bdf41b",
+        "reserve0": 65356160.592462674,
+        "reserve1": 24589955.576847706,
+        "volume_24h": 5.973996957679444e+22,
+        "volume_1h": 4.0003088611574096e+19,
+        "token0": {
+            "id": "0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3",
+            "symbol": "MIM",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 0.9995403120824002
+        },
+        "token1": {
+            "id": "0x6c3f90f043a72fa612cbac8115ee7e52bde6e490",
+            "symbol": "3Crv",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.0265971202654944
+        },
+        "token0Price": 1.027069251590989,
+        "token1Price": 0.973644180712199,
+        "reserveUSD": 90570094.7377459,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0xfd5db7463a3ab53fd211b4af195c5bccc1a03890",
+        "reserve0": 7227.864814,
+        "reserve1": 13004.376916135834,
+        "volume_24h": 2.2985564229375243e+21,
+        "volume_1h": 2.2985564229375243e+21,
+        "token0": {
+            "id": "0xc581b735a1688071a1746c968e0798d642ede491",
+            "symbol": "EURT",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1.0767398173641691
+        },
+        "token1": {
+            "id": "0xd71ecff9342a5ced620049e616c5035f1db98620",
+            "symbol": "sEUR",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.07
+        },
+        "token0Price": 0.9937405329909058,
+        "token1Price": 1.0062988947328684,
+        "reserveUSD": 21697.213140024607,
+        "protocol": "Curve",
+        "dangerous": true
+    },
+    {
+        "id": "0x4e0915c88bc70750d68c481540f081fefaf22273",
+        "reserve0": 511.458398,
+        "reserve1": 539.275427,
+        "volume_24h": 56361569.71590514,
+        "volume_1h": 23316686.97753034,
+        "token0": {
+            "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1
+        },
+        "token1": {
+            "id": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "symbol": "USDT",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1.001
+        },
+        "token0Price": 1.001,
+        "token1Price": 0.9990009990009991,
+        "reserveUSD": 1051.273100427,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x4e0915c88bc70750d68c481540f081fefaf22273",
+        "reserve0": 511.458398,
+        "reserve1": 126789.497415,
+        "volume_24h": 6828448390.300711,
+        "volume_1h": 2824917660.409517,
+        "token0": {
+            "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1
+        },
+        "token1": {
+            "id": "0xa693b19d2931d498c5b318df961919bb4aee87a5",
+            "symbol": "UST",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 0.011185
+        },
+        "token0Price": 0.011185,
+        "token1Price": 89.40545373267769,
+        "reserveUSD": 1929.5989265867752,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x4e0915c88bc70750d68c481540f081fefaf22273",
+        "reserve0": 511.458398,
+        "reserve1": 504.81865147965,
+        "volume_24h": 2.7078572082028802e+19,
+        "volume_1h": 1.1202359909734427e+19,
+        "token0": {
+            "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1
+        },
+        "token1": {
+            "id": "0x853d955acef822db058eb8505911ed77f175b99e",
+            "symbol": "FRAX",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 0.9996246779539373
+        },
+        "token0Price": 0.9996246779539373,
+        "token1Price": 1.0003754629655912,
+        "reserveUSD": 1016.087579910486,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x4e0915c88bc70750d68c481540f081fefaf22273",
+        "reserve0": 539.275427,
+        "reserve1": 126789.497415,
+        "volume_24h": 6829940501.225448,
+        "volume_1h": 2825534944.1995745,
+        "token0": {
+            "id": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "symbol": "USDT",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1.001
+        },
+        "token1": {
+            "id": "0xa693b19d2931d498c5b318df961919bb4aee87a5",
+            "symbol": "UST",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 0.011185
+        },
+        "token0Price": 0.011173826173826175,
+        "token1Price": 89.49485918641035,
+        "reserveUSD": 1957.9552310137751,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x4e0915c88bc70750d68c481540f081fefaf22273",
+        "reserve0": 539.275427,
+        "reserve1": 504.81865147965,
+        "volume_24h": 2.7078572082030293e+19,
+        "volume_1h": 1.1202359909735043e+19,
+        "token0": {
+            "id": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "symbol": "USDT",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1.001
+        },
+        "token1": {
+            "id": "0x853d955acef822db058eb8505911ed77f175b99e",
+            "symbol": "FRAX",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 0.9996246779539373
+        },
+        "token0Price": 0.9986260519020353,
+        "token1Price": 1.0013758384285567,
+        "reserveUSD": 1044.443884337486,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x4e0915c88bc70750d68c481540f081fefaf22273",
+        "reserve0": 126789.497415,
+        "reserve1": 504.81865147965,
+        "volume_24h": 2.707857208880238e+19,
+        "volume_1h": 1.1202359912536646e+19,
+        "token0": {
+            "id": "0xa693b19d2931d498c5b318df961919bb4aee87a5",
+            "symbol": "UST",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 0.011185
+        },
+        "token1": {
+            "id": "0x853d955acef822db058eb8505911ed77f175b99e",
+            "symbol": "FRAX",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 0.9996246779539373
+        },
+        "token0Price": 89.37189789485357,
+        "token1Price": 0.011189199553270138,
+        "reserveUSD": 1922.7697104972613,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x1005f7406f32a61bd760cfa14accd2737913d546",
+        "reserve0": 101.940884,
+        "reserve1": 107.54611,
+        "volume_24h": 999871.0000000001,
+        "volume_1h": 999871.0000000001,
+        "token0": {
+            "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1
+        },
+        "token1": {
+            "id": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "symbol": "USDT",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1.001
+        },
+        "token0Price": 1.001,
+        "token1Price": 0.9990009990009991,
+        "reserveUSD": 209.59454010999997,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0xdcef968d416a41cdac0ed8702fac8128a64241a2",
+        "reserve0": 439601728.7922047,
+        "reserve1": 193000544.510657,
+        "volume_24h": 6.709804982078266e+24,
+        "volume_1h": 1.1413266549312329e+23,
+        "token0": {
+            "id": "0x853d955acef822db058eb8505911ed77f175b99e",
+            "symbol": "FRAX",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 0.9996246779539373
+        },
+        "token1": {
+            "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1
+        },
+        "token0Price": 1.0003754629655912,
+        "token1Price": 0.9996246779539373,
+        "reserveUSD": 632437281.0825586,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0xa1f8a6807c402e4a15ef4eba36528a3fed24e577",
+        "reserve0": 19702.639265212332,
+        "reserve1": 56674.13198285305,
+        "volume_24h": 1.0694651352322624e+22,
+        "volume_1h": 4.3076723492362895e+19,
+        "token0": {
+            "id": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+            "symbol": "ETH",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1743.64
+        },
+        "token1": {
+            "id": "0x5e8422345238f34275888049021821e8e08caa1f",
+            "symbol": "frxETH",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1741.3182652471887
+        },
+        "token0Price": 0.9986684552127667,
+        "token1Price": 1.0013333201627457,
+        "reserveUSD": 133042011.11716673,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0xf253f83aca21aabd2a20553ae0bf7f65c755a07f",
+        "reserve0": 268.42330435,
+        "reserve1": 258.8278883089603,
+        "volume_24h": 798221959352387.9,
+        "volume_1h": 798221959352387.9,
+        "token0": {
+            "id": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+            "symbol": "WBTC",
+            "name": null,
+            "decimals": 8,
+            "priceUSD": 25655
+        },
+        "token1": {
+            "id": "0xfe18be6b3bd88a2d2a7f928d00292e7a9963cfc6",
+            "symbol": "sBTC",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 25513.9260506568
+        },
+        "token0Price": 0.9945011128691015,
+        "token1Price": 1.005529292083982,
+        "reserveUSD": 13490115.475261722,
+        "protocol": "Curve",
+        "dangerous": true
+    },
+    {
+        "id": "0xae34574ac03a15cd58a92dc79de7b1a0800f1ce3",
+        "reserve0": 62281381.07225431,
+        "reserve1": 50400158.38291781,
+        "volume_24h": 2.8999714033798538e+23,
+        "volume_1h": 5.241563400087062e+22,
+        "token0": {
+            "id": "0x853d955acef822db058eb8505911ed77f175b99e",
+            "symbol": "FRAX",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 0.9996246779539373
+        },
+        "token1": {
+            "id": "0x8e870d67f660d95d5be530380d0ec0bd388289e1",
+            "symbol": "USDP",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 0.999805
+        },
+        "token0Price": 1.000180389750313,
+        "token1Price": 0.9998196427842801,
+        "reserveUSD": 112648335.84891179,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0xbfab6fa95e0091ed66058ad493189d2cb29385e6",
+        "reserve0": 1481.363332675236,
+        "reserve1": 5077.425751720168,
+        "volume_24h": 2.785298338456992e+20,
+        "volume_1h": 3.198628020202073e+19,
+        "token0": {
+            "id": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+            "symbol": "ETH",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1743.64
+        },
+        "token1": {
+            "id": "0xa2e3356610840701bdf5611a53974510ae27e2e1",
+            "symbol": "wBETH",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1743.9289860061815
+        },
+        "token0Price": 1.0001657371970025,
+        "token1Price": 0.9998342902672641,
+        "reserveUSD": 11437634.304104874,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0xd51a44d3fae010294c616388b506acda1bfaae46",
+        "reserve0": 61823865.247829,
+        "reserve1": 2417.13447413,
+        "volume_24h": "MISSING",
+        "volume_1h": "MISSING",
+        "token0": {
+            "id": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "symbol": "USDT",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1.001
+        },
+        "token1": {
+            "id": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+            "symbol": "WBTC",
+            "name": null,
+            "decimals": 8,
+            "priceUSD": 25669
+        },
+        "token0Price": 25643.356643356645,
+        "token1Price": 3.899645486773929e-05,
+        "reserveUSD": 123931113.92951979,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0xd51a44d3fae010294c616388b506acda1bfaae46",
+        "reserve0": 61823865.247829,
+        "reserve1": 35742.27817433224,
+        "volume_24h": "MISSING",
+        "volume_1h": "MISSING",
+        "token0": {
+            "id": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "symbol": "USDT",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1.001
+        },
+        "token1": {
+            "id": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+            "symbol": "WETH",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1744.54
+        },
+        "token0Price": 1742.797202797203,
+        "token1Price": 0.0005737902255035711,
+        "reserveUSD": 124239523.07932639,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0xd51a44d3fae010294c616388b506acda1bfaae46",
+        "reserve0": 2417.13447413,
+        "reserve1": 35742.27817433224,
+        "volume_24h": "MISSING",
+        "volume_1h": "MISSING",
+        "token0": {
+            "id": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+            "symbol": "WBTC",
+            "name": null,
+            "decimals": 8,
+            "priceUSD": 25669
+        },
+        "token1": {
+            "id": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+            "symbol": "WETH",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1744.54
+        },
+        "token0Price": 0.06796291246250341,
+        "token1Price": 14.713907391060108,
+        "reserveUSD": 124399258.78269254,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x9838eccc42659fa8aa7daf2ad134b53984c9427b",
+        "reserve0": 2406255.512271,
+        "reserve1": 2511307.296387181,
+        "volume_24h": "MISSING",
+        "volume_1h": "MISSING",
+        "token0": {
+            "id": "0xc581b735a1688071a1746c968e0798d642ede491",
+            "symbol": "EURT",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1.0807650129431008
+        },
+        "token1": {
+            "id": "0x6c3f90f043a72fa612cbac8115ee7e52bde6e490",
+            "symbol": "3Crv",
+            "name": null,
+            "decimals": 18,
+            "priceUSD": 1.0265971202654944
+        },
+        "token0Price": 0.949880046051733,
+        "token1Price": 1.052764508694119,
+        "reserveUSD": 5178697.60843678,
+        "protocol": "Curve",
+        "dangerous": false
+    },
+    {
+        "id": "0x98a7f18d4e56cfe84e3d081b40001b3d5bd3eb8b",
+        "reserve0": 7421098.243645,
+        "reserve1": 7281687.45,
+        "volume_24h": "MISSING",
+        "volume_1h": "MISSING",
+        "token0": {
+            "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "symbol": "USDC",
+            "name": null,
+            "decimals": 6,
+            "priceUSD": 1
+        },
+        "token1": {
+            "id": "0xdb25f211ab05b1c97d595516f45794528a807ad8",
+            "symbol": "EURS",
+            "name": null,
+            "decimals": 2,
+            "priceUSD": 1.074
+        },
+        "token0Price": 1.074,
+        "token1Price": 0.9310986964618249,
+        "reserveUSD": 15241630.564945001,
+        "protocol": "Curve",
+        "dangerous": false
+    }
+]
