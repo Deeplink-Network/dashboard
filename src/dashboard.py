@@ -3,7 +3,7 @@ This module contains the main function for the dashboard, calling all the other 
 '''
 
 # local imports
-from pool_collector import get_latest_pool_data, collect_curve_pools, reformat_balancer_v1_pools, reformat_balancer_v2_pools
+from pool_collector_v2 import get_latest_pool_data, collect_curve_pools, reformat_balancer_v1_pools, reformat_balancer_v2_pools
 # third party imports
 import logging
 from constants import UNISWAP_V2, UNISWAP_V3, SUSHISWAP_V2, CURVE, BALANCER_V1, BALANCER_V2, DODO, PANCAKESWAP_V3
@@ -268,6 +268,11 @@ def refresh_matrix():
 
     # Create an empty DataFrame for storing liquidity data
     liquidity_df = pd.DataFrame(0, index=token_set, columns=token_set) # DataFrame for storing liquidity
+    # Create an empty DataFrame for storing volume data
+    volume_df_24h = pd.DataFrame(0, index=token_set, columns=token_set)
+    volume_df_1h = pd.DataFrame(0, index=token_set, columns=token_set)
+    # Dict for storing which pools pairs can be found in
+    pool_dict_for_pairs = {}
 
     # Populate the DataFrames
     for pool in trimmed_sorted_pool_dict.values():
@@ -280,6 +285,14 @@ def refresh_matrix():
                 liquidity = float(pool[DEX_LIQUIDITY_METRIC_MAP[pool['protocol']]])
                 liquidity_df.loc[token0_id, token1_id] += liquidity
                 liquidity_df.loc[token1_id, token0_id] += liquidity
+
+                # Compute volume
+                volume_24h = float(pool['volume_24h'])
+                volume_1h = float(pool['volume_1h'])
+                volume_df_24h.loc[token0_id, token1_id] += volume_24h
+                volume_df_24h.loc[token1_id, token0_id] += volume_24h
+                volume_df_1h.loc[token0_id, token1_id] += volume_1h
+                volume_df_1h.loc[token1_id, token0_id] += volume_1h
                 
                 # Compute price ratio
                 price0 = float(pool['token0'].get('priceUSD', 0))
@@ -288,6 +301,14 @@ def refresh_matrix():
                 if price0 != 0 and price1 != 0:
                     pair1 = (token0_id, token1_id)
                     pair2 = (token1_id, token0_id)
+	
+                    if pair1 not in pool_dict_for_pairs:
+                        pool_dict_for_pairs[pair1] = []
+                    if pair2 not in pool_dict_for_pairs:
+                        pool_dict_for_pairs[pair2] = []
+                    pool_dict_for_pairs[pair1].append(pool['id'])
+                    pool_dict_for_pairs[pair2].append(pool['id'])
+
                     movement_df_5m.loc[pair1] = movement_dict_5m.get(pair1, 0)
                     movement_df_5m.loc[pair2] = movement_dict_5m.get(pair2, 0)
                     movement_df_1h.loc[pair1] = movement_dict_1h.get(pair1, 0)
@@ -410,12 +431,13 @@ def refresh_matrix():
 
     for row_id in combined_df.index:
         for col_id in combined_df.columns:
-            liquidity = liquidity_df.loc[row_id, col_id] if pd.notnull(liquidity_df.loc[row_id, col_id]) else random.randrange(10_000, 10_000_000_000)
-            avg_price = average_price_df.loc[row_id, col_id] if pd.notnull(average_price_df.loc[row_id, col_id]) else random.uniform(0.001, 20_000)
-            price_movement_5m = movement_df_5m.loc[row_id, col_id] if pd.notnull(movement_df_5m.loc[row_id, col_id]) else random.uniform(-10, 10)
-            price_movement_1h = movement_df_1h.loc[row_id, col_id] if pd.notnull(movement_df_1h.loc[row_id, col_id]) else random.uniform(-50, 50)
-            price_movement_24h = movement_df_24h.loc[row_id, col_id] if pd.notnull(movement_df_24h.loc[row_id, col_id]) else random.uniform(-100, 100)
-            volume_24h = random.randrange(0, 10_000_000)
+            liquidity = liquidity_df.loc[row_id, col_id] if pd.notnull(liquidity_df.loc[row_id, col_id]) else 0
+            avg_price = average_price_df.loc[row_id, col_id] if pd.notnull(average_price_df.loc[row_id, col_id]) else 0
+            price_movement_5m = movement_df_5m.loc[row_id, col_id] if pd.notnull(movement_df_5m.loc[row_id, col_id]) else 0
+            price_movement_1h = movement_df_1h.loc[row_id, col_id] if pd.notnull(movement_df_1h.loc[row_id, col_id]) else 0
+            price_movement_24h = movement_df_24h.loc[row_id, col_id] if pd.notnull(movement_df_24h.loc[row_id, col_id]) else 0
+            volume_24h = volume_df_24h.loc[row_id, col_id]
+            volume_1h = volume_df_1h.loc[row_id, col_id]
             safety_score = random.randrange(0, 5)
             pair = {}
             pair[row_id] = {
@@ -436,17 +458,36 @@ def refresh_matrix():
                 'price_movement_5m': price_movement_5m,
                 'price_movement_1h': price_movement_1h,
                 'price_movement_24h': price_movement_24h,
+                'volume_1h': volume_1h,
                 'volume_24h': volume_24h,
                 'safety_score': safety_score,
-                'exchanges': exchange_dict.get((row_id, col_id), [])
+                'exchanges': exchange_dict.get((row_id, col_id), []),
+                'pools': list(set(pool_dict_for_pairs.get((row_id, col_id), [])))
             }
             # check if the cell is a diagonal
             if row_id == col_id:
                 combined_df.at[row_id, col_id]['diagonal'] = True
+                # set all values to 0
+                combined_df.at[row_id, col_id]['liquidity'] = 0
+                combined_df.at[row_id, col_id]['average_price'] = 0
+                combined_df.at[row_id, col_id]['price_movement_5m'] = 0
+                combined_df.at[row_id, col_id]['price_movement_1h'] = 0
+                combined_df.at[row_id, col_id]['price_movement_24h'] = 0
+                combined_df.at[row_id, col_id]['volume_24h'] = 0
+                combined_df.at[row_id, col_id]['safety_score'] = 0
+                combined_df.at[row_id, col_id]['exchanges'] = []
+                combined_df.at[row_id, col_id]['pools'] = []
             else:
                 combined_df.at[row_id, col_id]['diagonal'] = False
-
-
+            # if the pool is not found in any pools or exchanges then any nonzero data is invalid
+            if combined_df.at[row_id, col_id]['pools'] == [] or combined_df.at[row_id, col_id]['exchanges'] == []:
+                combined_df.at[row_id, col_id]['liquidity'] = 0
+                combined_df.at[row_id, col_id]['average_price'] = 0
+                combined_df.at[row_id, col_id]['price_movement_5m'] = 0
+                combined_df.at[row_id, col_id]['price_movement_1h'] = 0
+                combined_df.at[row_id, col_id]['price_movement_24h'] = 0
+                combined_df.at[row_id, col_id]['volume_24h'] = 0
+                combined_df.at[row_id, col_id]['safety_score'] = 0
     # combined_df.to_csv('data/combined_df.csv')
     combined_df.to_json('data/combined_df.json', orient='split')
 
