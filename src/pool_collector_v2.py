@@ -13,13 +13,13 @@ from itertools import combinations
 import logging
 import requests
 import os
-import dotenv
+# import dotenv
 import datetime
 
 # !!! REMOVE IS_HOURLY AND IS_DAILY FLAGS
 
-if os.path.exists(".env"):
-    dotenv.load_dotenv(".env")
+'''if os.path.exists(".env"):
+    dotenv.load_dotenv(".env")'''
     
 THE_GRAPH_KEY = os.getenv("THE_GRAPH_KEY")
 
