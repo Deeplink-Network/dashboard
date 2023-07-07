@@ -14,13 +14,13 @@ import datetime
 
 DEX_LIST = (
     UNISWAP_V2,
-    #UNISWAP_V3,
-    #SUSHISWAP_V2,
-    #CURVE,
+    UNISWAP_V3,
+    SUSHISWAP_V2,
+    CURVE,
     BALANCER_V1,
     BALANCER_V2,
-    #DODO,
-    #PANCAKESWAP_V3,
+    DODO,
+    PANCAKESWAP_V3,
 )
 
 async def refresh_pools(protocol: str):
@@ -81,12 +81,12 @@ async def main():
     for dex in DEX_LIST:
         try:
             await refresh_pools(dex)
-            # Save the pool data
-            with open(f'test_results/pool_dict_{dex}.json', 'w') as f:
-                json.dump(pool_dict, f)
-
         except KeyboardInterrupt:
-            break        
+            break     
 
+    # Save the pool data
+    with open('test_results/pool_dict.json', 'w') as f:
+        json.dump(pool_dict, f)
+        
 if __name__ == "__main__":
     asyncio.run(main())

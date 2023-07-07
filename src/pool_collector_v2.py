@@ -837,6 +837,7 @@ def balancer_v2_query(X: int, skip: int, max_metric: float = None, is_hourly: bo
         swapFee
         tokensList
         totalLiquidity
+        poolType
         swaps(orderBy: timestamp, orderDirection: desc, where: {{ timestamp_gte: {int(datetime.datetime.now().timestamp()) - 24 * 60 * 60} }}) {{
             valueUSD
             tokenIn
@@ -871,7 +872,8 @@ def reformat_balancer_v2_pools(pool_list):
             token1 = combination[1]
             new_pair = {
                 'id': pool['address'],
-                'totalLiquidity': pool['totalLiquidity'],
+                # 'totalLiquidity': pool['totalLiquidity'],
+                'totalLiquidity': float(token0['token']['totalBalanceUSD']) + float(token1['token']['totalBalanceUSD']),
                 'swapFee': pool['swapFee'],
                 'reserve0': token0['balance'],
                 'reserve1': token1['balance'],
@@ -891,7 +893,6 @@ def reformat_balancer_v2_pools(pool_list):
                     'totalBalanceUSD': token1['token']['totalBalanceUSD'],
                     'priceUSD': token1['token']['latestUSDPrice'],
                 },
-                # 'reserveUSD': float(token0['token']['totalBalanceUSD']) + float(token1['token']['totalBalanceUSD']),
                 'protocol': 'Balancer_V2',
             }
             reformatted_pools.append(new_pair)
@@ -992,8 +993,6 @@ async def get_latest_pool_data(protocol: str, X: int = 1000, skip: int = 0, max_
                     obj = await response.json()
                     data = obj['data']
                     # save data to file
-                    with open(f'temp/{protocol}_{X}_{skip}.json', 'w') as f:
-                        json.dump(obj, f)
                     pools = obj['data'][data_field]
 
                     timestamp_24h_ago = int((datetime.datetime.now() - datetime.timedelta(hours=24)).timestamp())
@@ -1129,14 +1128,14 @@ async def get_latest_pool_data(protocol: str, X: int = 1000, skip: int = 0, max_
                       # !!! CHANGE BACK TO 0s BEFORE PUSHING
                       # Check if the keys exist first
                       if 'volume_24h' not in pool:
-                        pool['volume_24h'] = -1
+                        pool['volume_24h'] = 0
                       if 'volume_1h' not in pool:
-                        pool['volume_1h'] = -2
+                        pool['volume_1h'] = 0
                       # Set volume_24h and volume_1h to 0 if they are None
                       if pool['volume_24h'] is None:
-                        pool['volume_24h'] = -3
+                        pool['volume_24h'] = 0
                       if pool['volume_1h'] is None:
-                        pool['volume_1h'] = -4
+                        pool['volume_1h'] = 0
                         
                     return pools
         except KeyError as e:
