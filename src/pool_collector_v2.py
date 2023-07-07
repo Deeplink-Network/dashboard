@@ -46,7 +46,7 @@ CURVE_ENDPOINTS = [
     "https://api.curve.fi/api/getPools/ethereum/main",
     "https://api.curve.fi/api/getPools/ethereum/crypto",
 ]
-CURVE_SUBGRAPH_ENDPOINT = f"https://gateway.thegraph.com/api/{THE_GRAPH_KEY}/subgraphs/id/4yx4rR6Kf8WH4RJPGhLSHojUxJzRWgEZb51iTran1sEG"
+CURVE_SUBGRAPH_ENDPOINT = "https://api.thegraph.com/subgraphs/name/messari/curve-finance-ethereum"
 BALANCER_V1_ENDPOINT = "https://api.thegraph.com/subgraphs/name/balancer-labs/balancer"
 BALANCER_V2_ENDPOINT = "https://api.thegraph.com/subgraphs/name/balancer-labs/balancer-v2"
 DODO_ENDPOINT = "https://api.thegraph.com/subgraphs/name/dodoex/dodoex-v2"
@@ -519,19 +519,18 @@ async def collect_dodo_data():
 
 
 async def fetch_and_calculate_curve_volumes(retries=10, backoff_factor=1):
-    # Define the query
+    # Define the new query
     query = """
     {
-      pools(first: 1000, orderBy: id, orderDirection: desc) {
+      liquidityPools(first: 1000, orderBy: id) {
         id
-        coins {
-          balance
+        dailySnapshots(first: 1, where: {timestamp_gte: "1688636630"}) {
+          dailyVolumeUSD
+          timestamp
         }
-        dailyVolumes(first: 1, orderBy: timestamp, orderDirection: desc) {
-          volume
-        }
-        hourlyVolumes(first: 1, orderBy: timestamp, orderDirection: desc) {
-          volume
+        hourlySnapshots(first: 1, where: {timestamp_gte: "1688719430"}) {
+          hourlyVolumeUSD
+          timestamp
         }
       }
     }
@@ -557,15 +556,15 @@ async def fetch_and_calculate_curve_volumes(retries=10, backoff_factor=1):
 
     # Map pool id to its volumes
     volume_data = {}
-    for pool in data.get('data', {}).get('pools', []):
-        total_balance = sum(float(coin['balance']) for coin in pool['coins'])
+    for pool in data.get('data', {}).get('liquidityPools', []):
         
-        daily_volume = float(pool['dailyVolumes'][0]['volume']) if pool['dailyVolumes'] else None
-        hourly_volume = float(pool['hourlyVolumes'][0]['volume']) if pool['hourlyVolumes'] else None
+        daily_volume = float(pool['dailySnapshots'][0]['dailyVolumeUSD']) if pool['dailySnapshots'] else None
+        hourly_volume = float(pool['hourlySnapshots'][0]['hourlyVolumeUSD']) if pool['hourlySnapshots'] else None
 
-        volume_data[pool['id']] = (daily_volume, hourly_volume, total_balance)
+        volume_data[pool['id']] = (daily_volume, hourly_volume)
 
     return volume_data
+
 
 async def collect_curve_pools():
     # print('collecting data from curve...')
@@ -588,7 +587,14 @@ async def collect_curve_pools():
                         # else:
                             # print(f"Found volume data for pool: {pool['address']}")
 
-                        daily_volume, hourly_volume, total_balance = volume_data[pool['address'].lower()]
+                        daily_volume, hourly_volume = volume_data[pool['address'].lower()]
+
+                        # check if either are null, if so, set to 0
+                        if daily_volume is None:
+                            daily_volume = 0
+                        if hourly_volume is None:
+                            hourly_volume = 0
+
                         pairs = combinations(pool['coins'], 2)
                         
                         for pair in pairs:
@@ -602,14 +608,13 @@ async def collect_curve_pools():
                             balance1 = int(pair[1]['poolBalance'])
 
                             pair_balance = balance0 + balance1
-                            pair_proportion = pair_balance / total_balance if total_balance != 0 else 0
 
                             new_pair = {}
                             new_pair['id'] = pool['address'].lower()
                             new_pair['reserve0'] = balance0 / 10**decimals0
                             new_pair['reserve1'] = balance1 / 10**decimals1
-                            new_pair['volume_24h'] = daily_volume * pair_proportion if daily_volume != None else None
-                            new_pair['volume_1h'] = hourly_volume * pair_proportion if hourly_volume != None else None
+                            new_pair['volume_24h'] = daily_volume
+                            new_pair['volume_1h'] = hourly_volume
 
                             new_pair['token0'] = {
                                 'id': pair[0]['address'].lower(),
@@ -637,6 +642,7 @@ async def collect_curve_pools():
                         print(f'Error occurred: {e}')
                         break
     return res
+
 
 def balancer_v1_query(X: int, skip: int, max_metric: float, is_hourly: bool):
     timestamp_24h_ago = int((datetime.datetime.now() - datetime.timedelta(hours=24)).timestamp())
