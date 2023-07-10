@@ -47,6 +47,11 @@ BLACKLISTED_TOKENS = [
 ]
 
 pool_dict = {}
+
+if os.path.exists('test_results/pool_dict.json'):
+    with open('test_results/pool_dict.json', 'r') as f:
+        pool_dict = json.load(f)
+
 pools = {
     exch: {
         'metric': DEX_METRIC_MAP[exch],
@@ -191,10 +196,12 @@ def refresh_matrix():
         if token0_id in trimmed_sorted_token_liquidity or token1_id in trimmed_sorted_token_liquidity:
             trimmed_pool_dict[pool_id] = pool
 
-    trimmed_sorted_pool_dict = dict(sorted(trimmed_pool_dict.items(), key=lambda pool: float(pool[1][DEX_LIQUIDITY_METRIC_MAP[pool[1]['protocol']]]), reverse=True))
+    trimmed_sorted_pools = sorted(trimmed_pool_dict.values(), key=lambda pool: float(pool[DEX_LIQUIDITY_METRIC_MAP[pool['protocol']]]), reverse=True)
 
     # Drop extreme pools, another band-aid fix
-    trimmed_sorted_pool_dict = {k: v for k, v in trimmed_sorted_pool_dict.items() if float(v[DEX_LIQUIDITY_METRIC_MAP[v['protocol']]]) > MIN_LIQUIDITY_THRESHOLD and float(v[DEX_LIQUIDITY_METRIC_MAP[v['protocol']]]) < MAX_LIQUIDITY_THRESHOLD}
+    # trimmed_sorted_pool_dict = {k: v for k, v in trimmed_sorted_pools.items() if float(v[DEX_LIQUIDITY_METRIC_MAP[v['protocol']]]) > MIN_LIQUIDITY_THRESHOLD and float(v[DEX_LIQUIDITY_METRIC_MAP[v['protocol']]]) < MAX_LIQUIDITY_THRESHOLD}
+
+    trimmed_sorted_pools = list(filter(lambda pool: float(pool[DEX_LIQUIDITY_METRIC_MAP[pool['protocol']]]) > MIN_LIQUIDITY_THRESHOLD and float(pool[DEX_LIQUIDITY_METRIC_MAP[pool['protocol']]]) < MAX_LIQUIDITY_THRESHOLD, trimmed_sorted_pools))
 
     # Create a dictionary to store prices and identify tokens
     price_dict = {} # Dictionary for storing prices
@@ -207,7 +214,7 @@ def refresh_matrix():
     TOKEN_NAME_MAP = {} # Dictionary for storing token ids:names
 
     # Populate the dictionaries
-    for pool in trimmed_sorted_pool_dict.values():
+    for pool in trimmed_sorted_pools:
         token0_id = pool['token0']['id']
         token1_id = pool['token1']['id']
         token0_symbol = pool['token0']['symbol']
@@ -275,7 +282,7 @@ def refresh_matrix():
     pool_dict_for_pairs = {}
 
     # Populate the DataFrames
-    for pool in trimmed_sorted_pool_dict.values():
+    for pool in trimmed_sorted_pools:
         token0_id = pool['token0']['id']
         token1_id = pool['token1']['id']
 
@@ -489,7 +496,18 @@ def refresh_matrix():
                 combined_df.at[row_id, col_id]['volume_24h'] = 0
                 combined_df.at[row_id, col_id]['safety_score'] = 0
     # combined_df.to_csv('data/combined_df.csv')
-    combined_df.to_json('data/combined_df.json', orient='split')
+    combined_df.to_json('data/combined_df_liquidity.json', orient='split')
+
+    combined_df['mean_avg_price'] = combined_df.applymap(lambda x: x['average_price']).mean(axis=1)
+    combined_df.sort_values(by=['mean_avg_price'], ascending=False, inplace=True)
+    del combined_df['mean_avg_price']
+    combined_df.to_json('data/combined_df_average_price.json', orient='split')
+
+    combined_df['max_volume_24h'] = combined_df.applymap(lambda x: x['volume_24h']).max(axis=1)
+    combined_df.sort_values(by=['max_volume_24h'], ascending=False, inplace=True)
+    del combined_df['max_volume_24h']
+    combined_df.to_json('data/combined_df_volume_24h.json', orient='split')
+
 
 
 def get_matrix_segment(df, x, y, i, j):

@@ -33,6 +33,11 @@ paths:
           schema:
             type: integer
           description: The ending column index.
+        - in: query
+          name: sort_by
+          schema:
+            type: string
+          description: The metric to sort the matrix by. One of "liquidity", "price", or "volume"
       responses:
         '200':
           description: A matrix segment successfully returned.

@@ -10,6 +10,7 @@ from rich.progress import Progress
 from logging import basicConfig, INFO
 from flask_swagger_ui import get_swaggerui_blueprint
 from whitenoise import WhiteNoise
+import os
 
 # Create a console for rich output
 console = Console()
@@ -42,14 +43,28 @@ app.register_blueprint(swaggerui_blueprint)
 
 loop = asyncio.get_event_loop()
 
+def load_matrix_file(sort_by='liquidity'):
+    if sort_by == 'liquidity':
+        with open('data/combined_df_liquidity.json', 'r') as f:
+            return pd.read_json(f, orient='split')
+    elif sort_by == 'volume':
+        with open('data/combined_df_volume_24h.json', 'r') as f:
+            return pd.read_json(f, orient='split')
+    elif sort_by == 'price':
+        with open('data/combined_df_average_price.json', 'r') as f:
+            return pd.read_json(f, orient='split')
+    else:
+        return None
+
 async def refresh_data():
     while True:
         with Progress(console=console, transient=True) as progress:
-            task = progress.add_task("[cyan]Refreshing pools...", total=len(DEX_LIST))
-            refresh_tasks = [refresh_pools(dex) for dex in DEX_LIST]
-            results = await asyncio.gather(*refresh_tasks)
-            for _ in results:
-                progress.advance(task)
+            if not os.path.exists('test_results/pool_dict.json'):
+                task = progress.add_task("[cyan]Refreshing pools...", total=len(DEX_LIST))
+                refresh_tasks = [refresh_pools(dex) for dex in DEX_LIST]
+                results = await asyncio.gather(*refresh_tasks)
+                for _ in results:
+                    progress.advance(task)
             console.log("All pools refreshed.")
             console.log("Refreshing matrix...")
             refresh_matrix()
@@ -75,12 +90,14 @@ async def matrix():
     y = int(request.args.get('y')) # ending row index
     i = int(request.args.get('i')) # starting column index
     j = int(request.args.get('j')) # ending column index
+    sort_by = request.args.get('sort_by', default='liquidity') # filter by asset ID
 
     # check if the matrix file exists
     try:
         # open the combined_df.json file
-        with open('data/combined_df.json', 'r') as f:
-            df = pd.read_json(f, orient='split')
+        df = load_matrix_file(sort_by=sort_by)
+        if df is None:
+            return jsonify({'status': 'invalid sort parameter'})
     except:
         # if the matrix file does not exist, return something to let the frontend know that the matrix is not ready
         return jsonify({'status': 'matrix not ready'})
@@ -95,12 +112,15 @@ async def matrix():
 @app.route('/matrix_filter', methods=['GET'])
 async def matrix_filter():
     asset_id = request.args.get('asset_id')  # Asset ID to filter by
+    sort_by = request.args.get('sort_by', default='liquidity')
 
     # Check if the matrix file exists
     try:
         # Open the combined_df.json file
-        with open('data/combined_df.json', 'r') as f:
-            df = pd.read_json(f, orient='split')
+        df = load_matrix_file(sort_by=sort_by)
+        if df is None:
+            return jsonify({'status': 'invalid sort parameter'})
+
     except FileNotFoundError:
         # If the matrix file does not exist, return a response indicating that the matrix is not ready
         return jsonify({'status': 'matrix not ready'})
