@@ -37,7 +37,7 @@ paths:
           name: sort_by
           schema:
             type: string
-          description: The metric to sort the matrix by. One of "liquidity", "price", or "volume"
+          description: The metric to sort the matrix by. One of "liquidity", "price", "volume", or "popular". "popular" ensures that USDC, USDT, and DAI are in the top 3.
       responses:
         '200':
           description: A matrix segment successfully returned.

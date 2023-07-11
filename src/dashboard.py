@@ -501,12 +501,22 @@ def refresh_matrix():
     combined_df['mean_avg_price'] = combined_df.applymap(lambda x: x['average_price']).mean(axis=1)
     combined_df.sort_values(by=['mean_avg_price'], ascending=False, inplace=True)
     del combined_df['mean_avg_price']
+    combined_df = combined_df.reindex(combined_df.index, axis=1)
     combined_df.to_json('data/combined_df_average_price.json', orient='split')
 
     combined_df['max_volume_24h'] = combined_df.applymap(lambda x: x['volume_24h']).max(axis=1)
     combined_df.sort_values(by=['max_volume_24h'], ascending=False, inplace=True)
     del combined_df['max_volume_24h']
+    combined_df = combined_df.reindex(combined_df.index, axis=1)
     combined_df.to_json('data/combined_df_volume_24h.json', orient='split')
+
+    # Move USDT, USDC, and DAI to the top 3 rows
+    combined_df = combined_df.reindex(['0xdac17f958d2ee523a2206206994597c13d831ec7', '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48', '0x6b175474e89094c44da98b954eedeac495271d0f'] + list(combined_df.index.difference(['0xdac17f958d2ee523a2206206994597c13d831ec7', '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48', '0x6b175474e89094c44da98b954eedeac495271d0f'])), axis=0)
+
+    # Make the columns have the same order as the rows
+    combined_df = combined_df.reindex(combined_df.index, axis=1)
+
+    combined_df.to_json('data/combined_df_popular.json', orient='split')
 
 
 

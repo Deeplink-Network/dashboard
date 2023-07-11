@@ -53,6 +53,9 @@ def load_matrix_file(sort_by='liquidity'):
     elif sort_by == 'price':
         with open('data/combined_df_average_price.json', 'r') as f:
             return pd.read_json(f, orient='split')
+    elif sort_by == 'popular':
+        with open('data/combined_df_popular.json', 'r') as f:
+            return pd.read_json(f, orient='split')
     else:
         return None
 
