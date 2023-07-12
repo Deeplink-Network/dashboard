@@ -131,8 +131,8 @@ def refresh_matrix():
     # print("Refreshing matrix...")
     global pool_dict
     # save pool dict to data
-    with open('data/pool_dict.json', 'w') as f:
-        json.dump(pool_dict, f)
+    '''with open('data/pool_dict.json', 'w') as f:
+        json.dump(pool_dict, f)'''
     # Calculate total liquidity for each token
     for pool in pool_dict.values():
         token0_id = pool['token0']['id']
@@ -368,7 +368,7 @@ def refresh_matrix():
 
     # Populate the average_price_df using the trimmed_average_price_dict
     for (token0, token1), average_price in trimmed_average_price_dict.items():
-        average_price_df.loc[token0, token1] = average_price
+        average_price_df.loc[token1, token0] = average_price
 
     # Save the trimmed average price dictionary to a file with a timestamp
     unix_timestamp_str = str(int(time.time()))

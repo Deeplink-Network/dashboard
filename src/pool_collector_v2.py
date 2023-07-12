@@ -542,9 +542,6 @@ async def fetch_and_calculate_curve_volumes(retries=10, backoff_factor=1):
             async with aiohttp.ClientSession() as session:
                 async with session.post(CURVE_SUBGRAPH_ENDPOINT, json={'query': query}) as response:
                     data = await response.json()
-                    print(f'enpoint: {CURVE_SUBGRAPH_ENDPOINT}')
-                    print(data)
-                    print()
                     break
         except Exception as e:
             wait_time = backoff_factor * (2 ** attempt)
@@ -1093,7 +1090,6 @@ async def get_latest_pool_data(protocol: str, X: int = 1000, skip: int = 0, max_
                             for pool_day_data in pool['poolDayData']:
                                 if int(pool_day_data['date']) >= timestamp_24h_ago:
                                     volume_24h = float(pool_day_data['volumeUSD'])
-                                    print(pool_day_data)
                                     break
 
                             # Retrieve volumeUSD from poolHourData within the last 1 hour
@@ -1102,7 +1098,6 @@ async def get_latest_pool_data(protocol: str, X: int = 1000, skip: int = 0, max_
                             for pool_hour_data in pool['poolHourData']:
                                 if int(pool_hour_data['periodStartUnix']) >= timestamp_1h_ago:
                                     volume_1h = float(pool_hour_data['volumeUSD'])
-                                    print(pool_hour_data)
                                     break
 
                             # Calculate volume_24h using poolDayData
