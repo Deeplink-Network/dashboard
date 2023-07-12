@@ -39,7 +39,7 @@ with open(r'data/bad_tokens.json') as f:
     BAD_TOKENS = json.load(f)
     BAD_TOKEN_SYMS = [token['symbol'] for token in BAD_TOKENS['tokens']]
 
-UNISWAPV2_ENDPOINT = "https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v2"
+UNISWAPV2_ENDPOINT = "https://api.thegraph.com/subgraphs/name/ianlapham/uniswap-v2-dev"
 UNISWAPV3_ENDPOINT = "https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v3"
 SUSHISWAPV2_ENDPOINT = "https://api.thegraph.com/subgraphs/name/sushi-v2/sushiswap-ethereum"
 CURVE_ENDPOINTS = [
@@ -992,7 +992,7 @@ async def get_latest_pool_data(protocol: str, X: int = 1000, skip: int = 0, max_
     while True:
         try:
             query = query_func(X, skip, max_metric, is_hourly)
-            print(query)
+            # print(query)
 
             async with aiohttp.ClientSession() as session:
                 async with session.post(endpoint, json={'query': query}) as response:

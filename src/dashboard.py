@@ -21,7 +21,7 @@ import random
 MAX_ORDERS = 20
 
 DEX_LIST = (
-    #UNISWAP_V2,
+    UNISWAP_V2,
     UNISWAP_V3,
     SUSHISWAP_V2,
     CURVE,
@@ -71,7 +71,7 @@ DEX_LIQUIDITY_METRIC_MAP = {
 }
 
 MIN_LIQUIDITY_THRESHOLD = 500_000
-MAX_LIQUIDITY_THRESHOLD = 2_000_000_000
+MAX_LIQUIDITY_THRESHOLD = 200_000_000_000
 
 # Initialize empty dictionary for storing token liquidity
 token_liquidity = {}
@@ -130,6 +130,9 @@ async def refresh_pools(protocol: str):
 def refresh_matrix():
     # print("Refreshing matrix...")
     global pool_dict
+    # save pool dict to data
+    with open('data/pool_dict.json', 'w') as f:
+        json.dump(pool_dict, f)
     # Calculate total liquidity for each token
     for pool in pool_dict.values():
         token0_id = pool['token0']['id']
@@ -375,33 +378,54 @@ def refresh_matrix():
 
     # Find the file that was created closest to 5 minutes ago
     filepaths = glob.glob('data/trimmed_average_price_dict_*.json')
-    closest_filepath = None
-    closest_diff = None
 
+    # Compute the price movement percentage using the current prices and the prices from 5 minutes, 1 hour and 24 hours ago
+    closest_filepath_5m, closest_filepath_1h, closest_filepath_24h = None, None, None
+    closest_diff_5m, closest_diff_1h, closest_diff_24h = None, None, None
     for filepath in filepaths:
         file_timestamp_str = filepath.split('_')[-1].split('.')[0]
         file_timestamp = int(file_timestamp_str)
-        diff = abs(time.time() - file_timestamp - 60*5)
+        diff_5m = abs(time.time() - file_timestamp - 60*5)
+        diff_1h = abs(time.time() - file_timestamp - 60*60)
+        diff_24h = abs(time.time() - file_timestamp - 60*60*24)
 
         # Delete any files older than 25 hours
-        if diff > 60*60*25:
+        if diff_24h > 60*60*25:
             os.remove(filepath)
 
-        if closest_diff is None or diff < closest_diff:
-            closest_diff = diff
-            closest_filepath = filepath
+        if closest_diff_5m is None or diff_5m < closest_diff_5m:
+            closest_diff_5m = diff_5m
+            closest_filepath_5m = filepath
+        if closest_diff_1h is None or diff_1h < closest_diff_1h:
+            closest_diff_1h = diff_1h
+            closest_filepath_1h = filepath
+        if closest_diff_24h is None or diff_24h < closest_diff_24h:
+            closest_diff_24h = diff_24h
+            closest_filepath_24h = filepath
 
-    if closest_filepath:
-        with open(closest_filepath, 'r') as f:
-            past_price_dict = json.load(f)
-    else:
-        past_price_dict = {}
+    past_price_dict_5m = {}
+    if closest_filepath_5m:
+        with open(closest_filepath_5m, 'r') as f:
+            past_price_dict_5m = json.load(f)
+    past_price_dict_1h = {}
+    if closest_filepath_1h:
+        with open(closest_filepath_1h, 'r') as f:
+            past_price_dict_1h = json.load(f)
+    past_price_dict_24h = {}
+    if closest_filepath_24h:
+        with open(closest_filepath_24h, 'r') as f:
+            past_price_dict_24h = json.load(f)
 
-    # Compute the price movement percentage using the current prices and the prices from 5 minutes ago
     for (token0, token1), current_price in trimmed_average_price_dict.items():
-        past_price = past_price_dict.get(str((token0, token1)), current_price)  # default to current_price to avoid division by zero
-        price_movement = ((current_price - past_price) / past_price) * 100
-        movement_df_5m.loc[token0, token1] = price_movement
+        past_price_5m = past_price_dict_5m.get(str((token0, token1)), current_price)
+        price_movement_5m = ((current_price - past_price_5m) / past_price_5m) * 100
+        movement_df_5m.loc[token0, token1] = price_movement_5m
+        past_price_1h = past_price_dict_1h.get(str((token0, token1)), current_price)
+        price_movement_1h = ((current_price - past_price_1h) / past_price_1h) * 100
+        movement_df_1h.loc[token0, token1] = price_movement_1h
+        past_price_24h = past_price_dict_24h.get(str((token0, token1)), current_price)
+        price_movement_24h = ((current_price - past_price_24h) / past_price_24h) * 100
+        movement_df_24h.loc[token0, token1] = price_movement_24h
 
     # Compute total liquidity for each token
     all_ids = list(set(liquidity_df.columns).union(set(liquidity_df.index)))
@@ -468,7 +492,7 @@ def refresh_matrix():
                 'volume_1h': volume_1h,
                 'volume_24h': volume_24h,
                 'safety_score': safety_score,
-                'exchanges': exchange_dict.get((row_id, col_id), []),
+                'exchanges': set(exchange_dict.get((row_id, col_id), [])),
                 'pools': list(set(pool_dict_for_pairs.get((row_id, col_id), [])))
             }
             # check if the cell is a diagonal
@@ -517,8 +541,6 @@ def refresh_matrix():
     combined_df = combined_df.reindex(combined_df.index, axis=1)
 
     combined_df.to_json('data/combined_df_popular.json', orient='split')
-
-
 
 def get_matrix_segment(df, x, y, i, j):
     segment = df.iloc[x:y, i:j]
