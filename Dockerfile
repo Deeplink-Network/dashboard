@@ -10,4 +10,4 @@ COPY src/ .
 
 EXPOSE 5000
 
-CMD ["gunicorn", "-b", "0.0.0.0:5000", "server:main()"]
+CMD ["gunicorn", "-b", "0.0.0.0:5000", "rich_server:main()"]
