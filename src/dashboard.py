@@ -70,8 +70,8 @@ DEX_LIQUIDITY_METRIC_MAP = {
     PANCAKESWAP_V3: 'totalValueLockedUSD'
 }
 
-MIN_LIQUIDITY_THRESHOLD = 500_000
-MAX_LIQUIDITY_THRESHOLD = 200_000_000_000
+MIN_LIQUIDITY_THRESHOLD = 8_000_000
+MAX_LIQUIDITY_THRESHOLD = 8_000_000_000
 
 # Initialize empty dictionary for storing token liquidity
 token_liquidity = {}

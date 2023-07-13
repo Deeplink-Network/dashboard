@@ -9,3 +9,4 @@ rich
 requests
 flask_swagger_ui
 whitenoise
+psutil
