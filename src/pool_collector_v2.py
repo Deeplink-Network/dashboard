@@ -532,22 +532,26 @@ async def collect_dodo_data():
 
 
 async def fetch_and_calculate_curve_volumes(retries=10, backoff_factor=1):
+    timestamp_24h_ago = int((datetime.datetime.now() - datetime.timedelta(hours=24)).timestamp())
+    timestamp_1h_ago = int((datetime.datetime.now() - datetime.timedelta(hours=1)).timestamp())
+
     # Define the new query
-    query = """
-    {
-      liquidityPools(first: 1000, orderBy: id) {
+    query = f"""
+    {{
+      liquidityPools(first: 1000, orderBy: id) {{
         id
-        dailySnapshots(first: 1, where: {timestamp_gte: "1688636630"}) {
+        dailySnapshots(first: 1, where: {{timestamp_gte: "{timestamp_24h_ago}"}}, orderBy: timestamp, orderDirection: desc) {{
           dailyVolumeUSD
           timestamp
-        }
-        hourlySnapshots(first: 1, where: {timestamp_gte: "1688719430"}) {
+        }}
+        hourlySnapshots(first: 1, where: {{timestamp_gte: "{timestamp_1h_ago}"}}, orderBy: timestamp, orderDirection: desc) {{
           hourlyVolumeUSD
           timestamp
-        }
-      }
-    }
+        }}
+      }}
+    }}
     """
+
 
     # Request the data
     for attempt in range(retries):
@@ -568,8 +572,8 @@ async def fetch_and_calculate_curve_volumes(retries=10, backoff_factor=1):
     volume_data = {}
     for pool in data.get('data', {}).get('liquidityPools', []):
         
-        daily_volume = float(pool['dailySnapshots'][0]['dailyVolumeUSD']) if pool['dailySnapshots'] else None
-        hourly_volume = float(pool['hourlySnapshots'][0]['hourlyVolumeUSD']) if pool['hourlySnapshots'] else None
+        daily_volume = float(pool['dailySnapshots'][0]['dailyVolumeUSD']) if pool['dailySnapshots'] else 0
+        hourly_volume = float(pool['hourlySnapshots'][0]['hourlyVolumeUSD']) if pool['hourlySnapshots'] else 0
 
         volume_data[pool['id']] = (daily_volume, hourly_volume)
 
@@ -577,7 +581,7 @@ async def fetch_and_calculate_curve_volumes(retries=10, backoff_factor=1):
 
 
 async def collect_curve_pools():
-    # print('collecting data from curve...')
+    print('collecting data from curve...')
     res = []
     volume_data = await fetch_and_calculate_curve_volumes()
     
