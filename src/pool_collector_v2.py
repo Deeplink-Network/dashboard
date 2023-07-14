@@ -270,12 +270,14 @@ def pancakeswap_v3_query(X: int, skip: int, max_metric: float, is_hourly: bool):
             symbol
             name
             decimals
+            derivedUSD
             }}
             token1 {{
             symbol
             name
             id
             decimals
+            derivedUSD
             }}
             id
             totalValueLockedToken0
@@ -308,11 +310,13 @@ def pancakeswap_v3_query(X: int, skip: int, max_metric: float, is_hourly: bool):
             symbol
             name
             decimals
+            derivedUSD
             }}
             token1 {{
             symbol
             id
             decimals
+            derivedUSD
             }}
             id
             totalValueLockedToken0
@@ -1062,12 +1066,10 @@ async def get_latest_pool_data(protocol: str, X: int = 1000, skip: int = 0, max_
                             pool['protocol'] = protocol
                             pool['reserve0'] = pool.pop('totalValueLockedToken0')
                             pool['reserve1'] = pool.pop('totalValueLockedToken1')
-                            try:
-                                pool['token0']['priceUSD'] = float(pool['totalValueLockedUSD']) / float(pool['reserve0'])
-                                pool['token1']['priceUSD'] = float(pool['totalValueLockedUSD']) / float(pool['reserve1'])
-                            except:
-                                pool['token0']['priceUSD'] = 0
-                                pool['token1']['priceUSD'] = 0
+                            
+                            # rename derivedUSD in token0 and token1 to priceUSD
+                            pool['token0']['priceUSD'] = pool['token0'].pop('derivedUSD')
+                            pool['token1']['priceUSD'] = pool['token1'].pop('derivedUSD')
                                 
                             if pool['poolHourData'] != []:
                                 pool['volume_1h'] = float(pool['poolHourData'][0]['volumeUSD'])
