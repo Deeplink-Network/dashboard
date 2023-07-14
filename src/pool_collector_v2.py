@@ -256,7 +256,11 @@ def uniswap_v3_query(X: int, skip: int, max_metric: float, is_hourly: bool):
         }}
         """
 
+
 def pancakeswap_v3_query(X: int, skip: int, max_metric: float, is_hourly: bool):
+    timestamp_24h_ago = int((datetime.datetime.now() - datetime.timedelta(hours=24)).timestamp())
+    timestamp_1h_ago = int((datetime.datetime.now() - datetime.timedelta(hours=1)).timestamp())
+
     if not max_metric:
         return f"""
         {{
@@ -283,10 +287,12 @@ def pancakeswap_v3_query(X: int, skip: int, max_metric: float, is_hourly: bool):
             feeTier
             sqrtPrice
             volumeUSD
-            poolHourData(first: 1, orderBy: periodStartUnix, orderDirection: desc) {{
+            poolHourData(first: 1, orderBy: periodStartUnix, orderDirection: desc, where: {{periodStartUnix_gte: {timestamp_1h_ago}}}) {{
+                periodStartUnix
                 volumeUSD
             }}
-            poolDayData(first: 1, orderBy: date, orderDirection: desc) {{
+            poolDayData(first: 1, orderBy: date, orderDirection: desc, where: {{date_gte: {timestamp_24h_ago}}}) {{
+                date
                 volumeUSD
 
         }}
@@ -318,15 +324,18 @@ def pancakeswap_v3_query(X: int, skip: int, max_metric: float, is_hourly: bool):
             feeTier
             sqrtPrice
             volumeUSD
-            poolHourData(first: 1, orderBy: periodStartUnix, orderDirection: desc) {{
+            poolHourData(first: 1, orderBy: periodStartUnix, orderDirection: desc, where: {{periodStartUnix_gte: {timestamp_1h_ago}}}) {{
+                periodStartUnix
                 volumeUSD
             }}
-            poolDayData(first: 1, orderBy: date, orderDirection: desc) {{
+            poolDayData(first: 1, orderBy: date, orderDirection: desc, where: {{date_gte: {timestamp_24h_ago}}}) {{
+                date
                 volumeUSD
         }}
         }}
         }}
         """
+
 
 async def collect_dodo_data():
     res = []
@@ -426,7 +435,7 @@ async def collect_dodo_data():
             pair_hour_datas = obj.get('data', {}).get('pairHourDatas', [])
 
         # Fetch pairDayDatas
-        date_gte = int((datetime.datetime.now() - datetime.timedelta(days=7)).timestamp())
+        date_gte = int((datetime.datetime.now() - datetime.timedelta(days=1)).timestamp())
         pair_day_datas_query = f"""
         {{
           pairDayDatas(orderBy: pair__volumeUSD, orderDirection: desc, where: {{ date_gte: {date_gte} }}, first: 1581) {{
@@ -1004,8 +1013,6 @@ async def get_latest_pool_data(protocol: str, X: int = 1000, skip: int = 0, max_
             async with aiohttp.ClientSession() as session:
                 async with session.post(endpoint, json={'query': query}) as response:
                     obj = await response.json()
-                    data = obj['data']
-                    # save data to file
                     pools = obj['data'][data_field]
 
                     timestamp_24h_ago = int((datetime.datetime.now() - datetime.timedelta(hours=24)).timestamp())
@@ -1061,6 +1068,18 @@ async def get_latest_pool_data(protocol: str, X: int = 1000, skip: int = 0, max_
                             except:
                                 pool['token0']['priceUSD'] = 0
                                 pool['token1']['priceUSD'] = 0
+                                
+                            if pool['poolHourData'] != []:
+                                pool['volume_1h'] = float(pool['poolHourData'][0]['volumeUSD'])
+                            else:
+                                pool['volume_1h'] = 0
+                                
+                            if pool['poolDayData'] != []:
+                                pool['volume_24h'] = float(pool['poolDayData'][0]['volumeUSD'])
+                                
+                            else:
+                                pool['volume_24h'] = 0
+                                
 
                     elif protocol == UNISWAP_V3:
                         for pool in pools:

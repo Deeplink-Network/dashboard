@@ -18,9 +18,9 @@ DEX_LIST = (
     #SUSHISWAP_V2,
     #CURVE,
     #BALANCER_V1,
-    BALANCER_V2,
+    #BALANCER_V2,
     #DODO,
-    #PANCAKESWAP_V3,
+    PANCAKESWAP_V3,
 )
 
 async def refresh_pools(protocol: str):
