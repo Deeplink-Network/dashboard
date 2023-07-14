@@ -14,9 +14,9 @@ import datetime
 
 DEX_LIST = (
     #UNISWAP_V2,
-    UNISWAP_V3,
+    #UNISWAP_V3,
     #SUSHISWAP_V2,
-    CURVE,
+    #CURVE,
     #BALANCER_V1,
     BALANCER_V2,
     #DODO,

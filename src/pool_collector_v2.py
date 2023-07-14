@@ -873,10 +873,19 @@ def reformat_balancer_v2_pools(pool_list):
         for combination in token_combinations:
             token0 = combination[0]
             token1 = combination[1]
+            print('balances:')
+            print(token0['balance'])
+            print(token1['balance'])
+            print('prices:')
+            print(token0['token']['latestUSDPrice'])
+            print(token1['token']['latestUSDPrice'])
+            print()
+            token0_balance = float(token0['balance'])
+            token1_balance = float(token1['balance'])
+            token0_price = float(token0['token']['latestUSDPrice']) if token0['token']['latestUSDPrice'] is not None else 0.0
+            token1_price = float(token1['token']['latestUSDPrice']) if token1['token']['latestUSDPrice'] is not None else 0.0
             new_pair = {
                 'id': pool['address'],
-                # 'totalLiquidity': pool['totalLiquidity'],
-                'totalLiquidity': float(token0['token']['totalBalanceUSD']) + float(token1['token']['totalBalanceUSD']),
                 'swapFee': pool['swapFee'],
                 'reserve0': token0['balance'],
                 'reserve1': token1['balance'],
@@ -885,30 +894,31 @@ def reformat_balancer_v2_pools(pool_list):
                     'symbol': token0['symbol'],
                     'name': token0['name'],
                     'weight': token0['weight'],
-                    'totalBalanceUSD': token0['token']['totalBalanceUSD'],
-                    'priceUSD': token0['token']['latestUSDPrice'],
+                    'balanceUSD': float(token0['balance']) * float(token0['token']['latestUSDPrice']) if token0['token']['latestUSDPrice'] is not None else 0.0, 
+                    'priceUSD': token0['token']['latestUSDPrice'] if token0['token']['latestUSDPrice'] is not None else 0.0,
                 },
                 'token1': {
                     'id': token1['address'],
                     'symbol': token1['symbol'],
                     'name': token1['name'],
                     'weight': token1['weight'],
-                    'totalBalanceUSD': token1['token']['totalBalanceUSD'],
-                    'priceUSD': token1['token']['latestUSDPrice'],
+                    'balanceUSD': float(token1['balance']) * float(token1['token']['latestUSDPrice']) if token1['token']['latestUSDPrice'] is not None else 0.0,
+                    'priceUSD': token1['token']['latestUSDPrice'] if token1['token']['latestUSDPrice'] is not None else 0.0,
                 },
+                'totalLiquidity': float(token0['balance']) * float(token0['token']['latestUSDPrice']) + float(token1['balance']) * float(token1['token']['latestUSDPrice']) if token0['token']['latestUSDPrice'] is not None and token1['token']['latestUSDPrice'] is not None else 0.0,
                 'protocol': 'Balancer_V2',
             }
             reformatted_pools.append(new_pair)
             new_pair['dangerous'] = new_pair['token0']['symbol'] in BAD_TOKEN_SYMS or new_pair['token1']['symbol'] in BAD_TOKEN_SYMS
-            # check if priceUSD is None and calculate it if it is
-            if new_pair['token0']['priceUSD'] is None:
+            # check if priceUSD is None (or 0 which can be resultant of it previously being None) and calculate it if it is
+            if new_pair['token0']['priceUSD'] is None or new_pair['token0']['priceUSD'] == 0:
                 try:
-                    new_pair['token0']['priceUSD'] = float(new_pair['token0']['totalBalanceUSD']) / float(new_pair['reserve0'])
+                    new_pair['token0']['priceUSD'] = float(new_pair['token0']['balanceUSD']) / float(new_pair['reserve0']) # new method
                 except ZeroDivisionError:
                     new_pair['token0']['priceUSD'] = 0
-            if new_pair['token1']['priceUSD'] is None:
+            if new_pair['token1']['priceUSD'] is None or new_pair['token1']['priceUSD'] == 0:
                 try:
-                    new_pair['token1']['priceUSD'] = float(new_pair['token1']['totalBalanceUSD']) / float(new_pair['reserve1'])
+                    new_pair['token1']['priceUSD'] = float(new_pair['token1']['balanceUSD']) / float(new_pair['reserve1']) # new method
                 except ZeroDivisionError:
                     new_pair['token1']['priceUSD'] = 0
             # calculate reserveUSD
