@@ -890,17 +890,6 @@ def reformat_balancer_v2_pools(pool_list):
         for combination in token_combinations:
             token0 = combination[0]
             token1 = combination[1]
-            print('balances:')
-            print(token0['balance'])
-            print(token1['balance'])
-            print('prices:')
-            print(token0['token']['latestUSDPrice'])
-            print(token1['token']['latestUSDPrice'])
-            print()
-            token0_balance = float(token0['balance'])
-            token1_balance = float(token1['balance'])
-            token0_price = float(token0['token']['latestUSDPrice']) if token0['token']['latestUSDPrice'] is not None else 0.0
-            token1_price = float(token1['token']['latestUSDPrice']) if token1['token']['latestUSDPrice'] is not None else 0.0
             new_pair = {
                 'id': pool['address'],
                 'swapFee': pool['swapFee'],
